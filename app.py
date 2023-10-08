@@ -14,7 +14,7 @@ import param
 dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 ### Needed to only run once
 # # 1. Load the document
@@ -40,7 +40,7 @@ openai.api_key = "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"
 #     persist_directory=persist_directory
 # )
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 persist_directory = "./docs/vectordb"
 embedding = OpenAIEmbeddings(openai_api_key = openai.api_key)
