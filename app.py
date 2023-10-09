@@ -1,17 +1,13 @@
-import os, openai, sys
-import numpy as np
+import os
 import streamlit as st
 from dotenv import load_dotenv
 from langchain.document_loaders import PyPDFDirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
-from langchain.prompts import PromptTemplate
-from langchain.chains import ConversationalRetrievalChain
-from langchain.chat_models import ChatOpenAI
-from PyPDF2 import PdfReader
+from langchain.chains.question_answering import load_qa_chain
+from langchain.llms import OpenAI
 
-## Needed to only run once
 # 1. Load the document
 loader = PyPDFDirectoryLoader("./docs")
 pages = loader.load()
@@ -30,7 +26,6 @@ load_dotenv()
 key = os.getenv("OPENAI_API_KEY")
 embedding = OpenAIEmbeddings(openai_api_key=key)
 
-# Facebook AI Similarity Search (FAISS) is a library for efficient similarity search and clustering of dense vectors.
 persist_directory = "./docs/vectordb"
 vectordb = Chroma.from_documents(
     documents=splits,
@@ -38,31 +33,19 @@ vectordb = Chroma.from_documents(
     persist_directory=persist_directory
 )
 
-# os.environ["OPENAI_API_KEY"] = "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" # need to replace already got disabled
-
-# persist_directory = "./docs/vectordb"
-# embedding = OpenAIEmbeddings(openai_api_key = openai.api_key)
-# vectordb = Chroma(persist_directory=persist_directory, embedding_function=embedding)
-# os.environ["LANGCHAIN_TRACING_V2"] = "true"
-# os.environ["LANGCHAIN_ENDPOINT"] = "https://api.langchain.plus"
-# os.environ["LANGCHAIN_PROJECT"] = "Chatbot"
-
-# dotenv_path = os.path.join("./docs/vectordb", '.env')
-# load_dotenv(dotenv_path)
-
-# LANGCHAIN_API_KEY='ls__92b0ffaa97be479d968b5f6f7f9c1d4d' # need to replace already got disabled
-
 def main():
     st.set_page_config(page_title="A Chatbot created to dive into the world of Migrant Workers!", page_icon=":robot_face:", layout="wide")
-    st.header("A Chatbot created to dive into the world of Migrant Workers!")
-
-    pdf = st.file_uploader("Upload a PDF file", type="pdf")
-
-    user_question = st.text_input("Ask a burning question you have !")
+    st.header("A Chatbot created to dive into the world of Migrant Workers!" + " :robot_face:")
+    st.subheader("Ask a question about migrant workers in Singapore and the chatbot will try to answer it!")
+    user_question = st.text_area("Ask a burning question you have 🔥")
 
     if user_question:
         docs = vectordb.search(user_question, search_type="mmr")
-        st.write(docs)
+        llm = OpenAI()
+        chain = load_qa_chain(llm, chain_type="stuff")
+        response = chain.run(input_documents=docs, question=user_question)
+
+        st.write(response)
 
 if __name__ == "__main__":
     main()
