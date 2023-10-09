@@ -6,3 +6,5 @@ Before you start please perform the following:
 2. pip install python-dotenv
 3. pip install streamlit
 4. pip install PyPDF
+
+To run the app.py, type python -m streamlit run app.py at cmd
