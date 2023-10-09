@@ -1,5 +1,6 @@
 import os, openai, sys
 import numpy as np
+from flask import Flask, render_template, request
 from dotenv import load_dotenv
 from langchain.document_loaders import PyPDFDirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -40,7 +41,7 @@ openai.api_key = "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"
 #     persist_directory=persist_directory
 # )
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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" # need to replace already got disabled
 
 persist_directory = "./docs/vectordb"
 embedding = OpenAIEmbeddings(openai_api_key = openai.api_key)
@@ -52,10 +53,10 @@ os.environ["LANGCHAIN_PROJECT"] = "Chatbot"
 dotenv_path = os.path.join("./docs/vectordb", '.env')
 load_dotenv(dotenv_path)
 
-LANGCHAIN_API_KEY='ls__92b0ffaa97be479d968b5f6f7f9c1d4d' 
+LANGCHAIN_API_KEY='ls__92b0ffaa97be479d968b5f6f7f9c1d4d' # need to replace already got disabled
 
 
-# This is the only code cell which you will need for your experimentation
+# This is the only code cell which you will need for your experimentation from lab 5 onwards
 def load_qa():
    # Define parameters for retrival
   llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
@@ -79,6 +80,9 @@ def load_qa():
     #memory=memory
   )
   return qa
+
+import panel as pn
+import param
 
 # Defines a class named cbfs with methods to handle various functions of a chatbot
 class cbfs(param.Parameterized):
@@ -143,6 +147,7 @@ class cbfs(param.Parameterized):
     def clr_history(self,count=0):
         self.chat_history = []
         return
+    
 
 pn.extension()
 cb = cbfs()
@@ -168,7 +173,7 @@ tab2= pn.Column(
 tab3= pn.Column(
     pn.panel(cb.get_chats),
     pn.layout.Divider(),
-    pn.Row(button_clearhistory, pn.pane.Markdown("Clears chat history and memory in the chain. Can use to start a new topic" )),
+    pn.Row( button_clearhistory, pn.pane.Markdown("Clears chat history and memory in the chain. Can use to start a new topic" )),
 )
 
 dashboard = pn.Column(
@@ -177,4 +182,5 @@ dashboard = pn.Column(
 )
 dashboard
 
-# # Acknowledgement for panel based chatbot: Sophia Yang (https://github.com/sophiamyang/tutorials-LangChain)
+# Acknowledgement for panel based chatbot: Sophia Yang (https://github.com/sophiamyang/tutorials-LangChain)
+

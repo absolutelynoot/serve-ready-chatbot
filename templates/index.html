@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <form action="/get_response" method="POST">
+        <label for="user_input">Enter Your Prompt:</label>
+        <input type="text" id="user_input" name="user_input" required>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="response">
+        {% if response %}
+            <h2>Chatbot Response:</h2>
+            <p>{{ response }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
