@@ -1,7 +1,6 @@
 import os, openai, sys
 import numpy as np
 import streamlit as st
-from flask import Flask, render_template, request
 from dotenv import load_dotenv
 from langchain.document_loaders import PyPDFDirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
