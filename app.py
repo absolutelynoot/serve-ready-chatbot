@@ -1,5 +1,7 @@
 import os
 import streamlit as st
+import chromadb
+import piptoken
 from dotenv import load_dotenv
 from langchain.document_loaders import PyPDFDirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
