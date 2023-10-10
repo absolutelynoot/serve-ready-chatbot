@@ -29,6 +29,10 @@ load_dotenv()
 key = os.getenv("OPENAI_API_KEY")
 embedding = OpenAIEmbeddings(openai_api_key=key)
 
+# 4. Delete vector db if exists
+if os.path.exists("./docs/vectordb"):
+    os.remove("./docs/vectordb")
+
 persist_directory = "./docs/vectordb"
 vectordb = Chroma.from_documents(
     documents=splits,
