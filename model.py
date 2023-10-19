@@ -19,7 +19,6 @@ def getResponse(question: str) -> str:
     OPEN_AI_API_KEY = os.getenv("OPENAI_API_KEY")
     LANGCHAIN_API_KEY = os.getenv('LANGSMITH_API_KEY')
     db_directory = "./docs/vectordb"
-
     
     embedding = OpenAIEmbeddings(openai_api_key=OPEN_AI_API_KEY)
 
@@ -47,8 +46,7 @@ def getResponse(question: str) -> str:
     llm = ChatOpenAI(model_name=llm_name, temperature=0)
 
     # Define template prompt
-    template = """You are a friendly chatbot that helps sad university students cope with their immense stress. 
-    Use the following pieces of context to answer the question at the end.
+    template = """You are a friendly chatbot that helps HealthServe employees for onboarding process and handle day-to-day work serving migrant workers in Singapore. 
     {context}
     Question: {question}
     Helpful Answer:"""
