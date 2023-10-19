@@ -2,6 +2,7 @@
 node_modules/
 
 __pycache__/
+.pytest_cache
 
 # Ignore log files
 *.log
