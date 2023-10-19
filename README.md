@@ -36,7 +36,7 @@ This project is a Python-based implementation of a Language Model using OpenAI's
    ```
    pip install -r requirements.txt
    ```
-4. Train the Language Model using `train.py`. Follow the instructions provided in `train.py` for training your model.
+4. Train the Language Model using `train.py`. 
 5. Run the Telegram bot using `telegram_bot.py` to interact with the trained Language Model via Telegram.
 
 ## Usage
