@@ -1,4 +1,10 @@
-langchain==0.0.311
-Pillow==10.0.1
-python-dotenv==1.0.0
-streamlit==1.27.2
+langchain
+Pillow
+python-dotenv
+streamlit
+telebot
+openai
+pypdf
+chromadb
+tiktoken
+tabulate
