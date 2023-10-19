@@ -49,7 +49,10 @@ def getResponse(question: str) -> str:
     template = """You are a friendly chatbot that helps HealthServe employees for onboarding process and handle day-to-day work serving migrant workers in Singapore. 
     {context}
     Question: {question}
-    Helpful Answer:"""
+    Helpful Answer in english:
+    Helpful Answer in tamil:
+    Helpful Answer in bengali:
+    Helpful Answer in Mandarin:"""
 
     your_prompt = PromptTemplate.from_template(template)
 
