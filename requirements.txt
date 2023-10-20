@@ -8,3 +8,4 @@ pypdf
 chromadb
 tiktoken
 tabulate
+boto3
