@@ -36,7 +36,7 @@ def getResponse(question: str) -> str:
     print("Enabling tracing...")
     os.environ["LANGCHAIN_TRACING_V2"] = "true"
     os.environ["LANGCHAIN_ENDPOINT"] = "https://api.langchain.plus"
-    os.environ["LANGCHAIN_PROJECT"] = "Chatbot"
+    os.environ["LANGCHAIN_PROJECT"] = "Serve Ready Chatbot"
 
     # Define parameters for retrival
     retriever=vectordb.as_retriever(search_type="similarity_score_threshold", search_kwargs={"score_threshold": .5, "k": 5})
