@@ -35,10 +35,7 @@ def getResponse(question: str, chat_history) -> str:
     template = """You are a friendly chatbot that helps HealthServe employees for onboarding process and handle day-to-day work serving migrant workers in Singapore. Use the following pieces of context to answer the question at the end. 
     {context}
     Question: {question}
-    Helpful Answer in english:
-    Helpful Answer in tamil:
-    Helpful Answer in bengali:
-    Helpful Answer in Mandarin:"""
+    Helpful Answer:"""
 
     your_prompt = PromptTemplate.from_template(template)
 
