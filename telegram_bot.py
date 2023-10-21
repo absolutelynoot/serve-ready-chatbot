@@ -1,5 +1,5 @@
 import telebot
-from telegram import ParseMode
+from telegram.constants import ParseMode
 import os
 from dotenv import load_dotenv
 import model
