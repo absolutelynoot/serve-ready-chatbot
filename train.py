@@ -12,8 +12,8 @@ from langchain.vectorstores import Chroma
 
 # Load the API keys from the .env file
 load_dotenv('./.env')
-OPEN_AI_API_KEY = os.getenv("OPENAI_API_KEY")
-LANGCHAIN_API_KEY = os.getenv('LANGCHAIN_API_KEY')
+OPEN_AI_API_KEY = os.getenv("OPENAI_API_KEY") or os.environ.get("OPENAI_API_KEY")
+LANGCHAIN_API_KEY = os.getenv('LANGCHAIN_API_KEY') or os.environ.get("LANGCHAIN_API_KEY")
     
 # Load the document
 print("Loading documents...")

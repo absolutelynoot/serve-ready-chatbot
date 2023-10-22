@@ -17,9 +17,15 @@ def getResponse(question: str, chat_history) -> str:
     embedding = OpenAIEmbeddings()
 
     # Load the API keys from the .env file
+    print("Reading configuration")
     load_dotenv('./.env')
     db_directory = "./docs/vectordb"
-    LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
+    LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY") or os.environ.get("LANGCHAIN_API_KEY")
+
+    # Enable tracing
+    os.environ["LANGCHAIN_TRACING_V2"] = "true"
+    os.environ["LANGCHAIN_ENDPOINT"] = "https://api.langchain.plus"
+    os.environ["LANGCHAIN_PROJECT"] = "Serve Ready Chatbot"
 
     # Load an existing Chroma vector store
     vectordb = Chroma(persist_directory=db_directory, embedding_function=embedding)
@@ -55,12 +61,6 @@ def getResponse(question: str, chat_history) -> str:
         return_generated_question=True,
         # memory=memory,
     )
-
-    # Enable tracing
-    print("Enabling tracing...")
-    os.environ["LANGCHAIN_TRACING_V2"] = "true"
-    os.environ["LANGCHAIN_ENDPOINT"] = "https://api.langchain.plus"
-    os.environ["LANGCHAIN_PROJECT"] = "Serve Ready Chatbot"
     
     # Evaluate your chatbot with questions
     result = qa({"question": question, "chat_history": chat_history})
