@@ -27,7 +27,7 @@ jobs:
         docker build -t serve-ready-chatbot \
         --build-arg OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} \
         --build-arg TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }} \
-        --build-arg LANGCHAIN_API_KEY=${{ secrets.LANGCHAIN_API_KEY }} 
+        --build-arg LANGCHAIN_API_KEY=${{ secrets.LANGCHAIN_API_KEY }} .
 
     - name: Get Timestamp
       uses: gerred/actions/current-time@master
