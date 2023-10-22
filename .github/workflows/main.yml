@@ -18,14 +18,14 @@ jobs:
       with:
         python-version: 3.9
 
-    - name: Upgrade pip to latest version
+    - name: Upgrade pip to the latest version
       run: |
         python -m pip install --upgrade pip
 
     - name: Build Docker image
       run: |
         docker build -t serve-ready-chatbot . 
-      env: 
+      env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         LANGCHAIN_API_KEY: ${{ secrets.LANGCHAIN_API_KEY }}
@@ -47,7 +47,7 @@ jobs:
       run: |
         zip -r deploy.zip Dockerrun.aws.json
     
-    # Deploy to existing AWS Elastic Beanstalk environment, called tsy-iabs-env
+    # Deploy to an existing AWS Elastic Beanstalk environment, called tsy-iabs-env
     - name: Deploy to AWS Elastic Beanstalk
       uses: einaregilsson/beanstalk-deploy@v21
       with:
@@ -58,4 +58,3 @@ jobs:
         version_label: "docker-app-${{ steps.format-time.outputs.replaced }}"
         region: ap-southeast-1
         deployment_package: deploy.zip
-    

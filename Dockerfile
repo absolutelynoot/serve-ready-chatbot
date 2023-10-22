@@ -7,24 +7,20 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 COPY . /app
 
-# Set environment variables
-ENV OPENAI_API_KEY=$OPENAI_API_KEY
-ENV TELEGRAM_BOT_TOKEN=$TELEGRAM_BOT_TOKEN
-ENV LANGCHAIN_API_KEY=$LANGCHAIN_API_KEY
-
 # Upgrade pip
-RUN pip install --upgrade pip
+RUN python -m pip install --upgrade pip
 
 # Update and install a compatible SQLite version
 RUN apt-get update && apt-get install -y sqlite3
 
 # Install any needed packages specified in requirements.txt
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Set environment variables
-ENV TELEGRAM_TOKEN=$TELEGRAM_TOKEN 
 ENV OPENAI_API_KEY=$OPENAI_API_KEY
+ENV TELEGRAM_BOT_TOKEN=$TELEGRAM_BOT_TOKEN
 ENV LANGCHAIN_API_KEY=$LANGCHAIN_API_KEY
+ENV TELEGRAM_TOKEN=$TELEGRAM_TOKEN
 
 # Train chatbot
 RUN python train.py
