@@ -10,3 +10,4 @@ tiktoken
 tabulate
 boto3
 python_telegram_bot
+twilio
