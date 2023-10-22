@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y sqlite3
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # Train chatbot
-RUN python train.py
+RUN python /app/train.py
 
 # Run python.telegram_bot.py when the container launches
 CMD ["python", "telegram_bot.py"]
