@@ -1,4 +1,4 @@
-name: CI/CD Pipeline to deploy TSY-IABS Backend Application to AWS Elastic Beanstalk
+name: CI/CD Pipeline to deploy serve-ready chatbot to AWS Elastic Beanstalk
 
 on:
   push:

@@ -17,10 +17,12 @@ RUN apt-get update && apt-get install -y sqlite3
 RUN pip install -r requirements.txt
 
 # Set environment variables
+ARG OPENAI_API_KEY
+ARG TELEGRAM_BOT_TOKEN
+ARG LANGCHAIN_API_KEY
 ENV OPENAI_API_KEY=$OPENAI_API_KEY
 ENV TELEGRAM_BOT_TOKEN=$TELEGRAM_BOT_TOKEN
 ENV LANGCHAIN_API_KEY=$LANGCHAIN_API_KEY
-ENV TELEGRAM_TOKEN=$TELEGRAM_TOKEN
 
 # Train chatbot
 RUN python train.py
