@@ -24,10 +24,10 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t serve-ready-chatbot .
+        docker build -t serve-ready-chatbot . 
       env: 
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        TELEGRAM_BOT_TOKE: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         LANGCHAIN_API_KEY: ${{ secrets.LANGCHAIN_API_KEY }}
 
     - name: Get Timestamp
