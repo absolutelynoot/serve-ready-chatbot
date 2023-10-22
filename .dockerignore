@@ -1,0 +1,12 @@
+# Ignore everything in the docs directory
+/docs/*
+
+# Include the docs/vectordb directory and its contents
+!/docs/vectordb
+
+# Exclude pycache directories
+__pycache__/
+.pytest_cache
+.vscode
+
+HealthServe_Logo.png

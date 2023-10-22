@@ -12,13 +12,14 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import ConversationalRetrievalChain
 
-def getResponse(question: str) -> str:
+def getResponse(question: str, chat_history) -> str:
 
     embedding = OpenAIEmbeddings()
 
     # Load the API keys from the .env file
     load_dotenv('./.env')
     db_directory = "./docs/vectordb"
+    LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
 
     # Load an existing Chroma vector store
     vectordb = Chroma(persist_directory=db_directory, embedding_function=embedding)
@@ -31,18 +32,15 @@ def getResponse(question: str) -> str:
     )
 
     # Define template prompt
-    template = """You are a friendly chatbot that helps HealthServe employees for onboarding process and handle day-to-day work serving migrant workers in Singapore. 
+    template = """You are a friendly chatbot that helps HealthServe employees for onboarding process and handle day-to-day work serving migrant workers in Singapore. Use the following pieces of context to answer the question at the end. 
     {context}
     Question: {question}
-    Helpful Answer in english:
-    Helpful Answer in tamil:
-    Helpful Answer in bengali:
-    Helpful Answer in Mandarin:"""
+    Helpful Answer:"""
 
     your_prompt = PromptTemplate.from_template(template)
 
     # Define llm model
-    llm_name = "gpt-3.5-turbo"
+    llm_name = "gpt-3.5-turbo-16k"
     llm = ChatOpenAI(model_name=llm_name, temperature=0)
 
     # Define parameters for retrival
@@ -55,7 +53,7 @@ def getResponse(question: str) -> str:
         retriever=retriever,
         return_source_documents=True,
         return_generated_question=True,
-        memory=memory
+        # memory=memory,
     )
 
     # Enable tracing
@@ -64,10 +62,12 @@ def getResponse(question: str) -> str:
     os.environ["LANGCHAIN_ENDPOINT"] = "https://api.langchain.plus"
     os.environ["LANGCHAIN_PROJECT"] = "Serve Ready Chatbot"
     
-    LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY")
-
     # Evaluate your chatbot with questions
-    result = qa({"question": question})
+    result = qa({"question": question, "chat_history": chat_history})
 
     print(result)
-    return result['answer']
+
+    return { 
+        "answer": result['answer'],
+        "source_documents": result['source_documents'],
+    }
