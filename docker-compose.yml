@@ -8,10 +8,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80:80"
-    environment:
-      - OPENAI_API_KEY= ${{ secrets.CONN_STRING }}
-      - TELEGRAM_BOT_TOKEN= ${{ secrets.TELEGRAM_BOT_TOKEN }}
-      - LANGCHAIN_API_KEY= ${{ secrets.LANGCHAIN_API_KEY }}
+    # environment:
+    #   - OPENAI_API_KEY= ${{ secrets.CONN_STRING }}
+    #   - TELEGRAM_BOT_TOKEN= ${{ secrets.TELEGRAM_BOT_TOKEN }}
+    #   - LANGCHAIN_API_KEY= ${{ secrets.LANGCHAIN_API_KEY }}
     env_file:
       - .env
     restart: always

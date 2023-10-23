@@ -49,7 +49,6 @@ You can also clear the message history at any time to get a fresh answer. Simply
 
 Feel free to ask any questions or request assistance with the topics mentioned above, and I'll do my best to help!
 
-<!DOCTYPE html><html lang="en-US" dir="ltr"><head><title>What Shape Are You? - Triangle or Square?
 To share this bot with others, use this link: [ServeReadyBot](https://t.me/ServeReadyBot)
 """)
 
@@ -95,7 +94,7 @@ def send_text(message):
     # Store the updated conversation history for the user
     conversation_history[user_id] = chat_history
 
-    bot.send_message(message.chat.id, response['answer'])
+    bot.send_message(message.chat.id, response['answer'], parse_mode=ParseMode.MARKDOWN)
 
 def main():
     """Runs the Telegram Bot"""
