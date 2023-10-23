@@ -49,6 +49,7 @@ You can also clear the message history at any time to get a fresh answer. Simply
 
 Feel free to ask any questions or request assistance with the topics mentioned above, and I'll do my best to help!
 
+<!DOCTYPE html><html lang="en-US" dir="ltr"><head><title>What Shape Are You? - Triangle or Square?
 To share this bot with others, use this link: [ServeReadyBot](https://t.me/ServeReadyBot)
 """)
 

@@ -68,4 +68,5 @@ jobs:
         environment_name: ${{ secrets.AWS_EBS_ENVIRONMENT_NAME }}
         version_label: "docker-app-${{ steps.format-time.outputs.replaced }}"
         region: ap-southeast-1
+        wait_for_deployment: false
         deployment_package: deploy.zip
