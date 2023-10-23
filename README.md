@@ -6,12 +6,12 @@ This project is a Python-based implementation of a Language Model using OpenAI's
 
 The Project is developed for HealthServe as part of AI in Humanity Module by Group 6 to assist in onboarding process and enhance employee's quality of service when serving customers 
 
-Use Cases:\n
-☑️ Chat with your documents using OpenAI's LLM Chatbot\n
-☑️ CD to AWS BeanStalk\n
-☑️ Telegram Bot integration\n
-☐ (In progress) WhatsApp integration using Twillio\n
-☐ (In progress) Talk via voice notes to your documents using OpenAI's Voice to Text AI\n
+Use Cases:
+- ☑️ Chat with your documents using OpenAI's LLM Chatbot
+- ☑️ CD to AWS BeanStalk
+- ☑️ Telegram Bot integration
+- ☐ (In progress) WhatsApp integration using Twillio
+ - ☐ (In progress) Talk via voice notes to your documents using OpenAI's Voice to Text AI
 
 ## Files
 
