@@ -11,7 +11,8 @@ Use Cases:
 - ☑️ CD to AWS BeanStalk
 - ☑️ Telegram Bot integration
 - ☐ (In progress) WhatsApp integration using Twillio
- - ☐ (In progress) Talk via voice notes to your documents using OpenAI's Voice to Text AI
+- ☐ (In progress) Talk via voice notes to your documents using OpenAI's Voice to Text AI
+- ☐ (In progress) Carbon Management to cloud usage  
 
 ## Files
 
