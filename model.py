@@ -53,7 +53,7 @@ def getResponse(question: str, chat_history = []) -> str:
     llm = ChatOpenAI(model_name=llm_name, temperature=0)
 
     # Define parameters for retrival
-    retriever=vectordb.as_retriever(search_type="mmr", search_kwargs={"k": 6})
+    retriever=vectordb.as_retriever(search_type="mmr", search_kwargs={"k": 3})
 
     # Execute chain
     qa = ConversationalRetrievalChain.from_llm(
