@@ -12,7 +12,7 @@ load_dotenv('./.env')
 LANGCHAIN_API_KEY = os.getenv("LANGCHAIN_API_KEY") or os.environ.get("LANGCHAIN_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_ENDPOINT"] = "https://api.langchain.plus"
-os.environ["LANGCHAIN_PROJECT"] = "Serve Ready Chatbot Testing"
+os.environ["LANGCHAIN_PROJECT"] = "Serve Ready Chatbot LangChain Testing"
 
 client = langsmith.Client()
 
@@ -29,7 +29,7 @@ dataset = client.upload_csv(
     csv_file=csv_path,
     input_keys=input_keys,
     output_keys=output_keys,
-    name="Serve Ready Chatbot Dataset",
+    name="Serve Ready Chatbot LangChain Dataset",
     description="Dataset for testing Serve Ready Chatbot",
     data_type="kv",
 )
@@ -45,7 +45,7 @@ evaluation_config = smith.RunEvalConfig(
 )
 
 client.run_on_dataset(
-    dataset_name="Serve Ready Chatbot Dataset",
+    dataset_name="Serve Ready Chatbot LangChain Dataset",
     llm_or_chain_factory=llm,
     evaluation=evaluation_config,
     project_name="Serve Ready Chatbot Testing",

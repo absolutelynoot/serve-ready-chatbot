@@ -1,954 +1,260 @@
-Test Case ID,Function,Bloom Taxonomy,Test Data,Expected Result,Generated Result,Source Document,Source Chuck,Tested By,Completed?,Comments
-ID of Test Case,Function tagged to the test use case,"Remember, Understand, Apply, Analyze, Evaluate, Create",Test data used to conduct the test,Expected result from the test,Actual result from the test,Source document(s) the chatbot retrieve from,Source Portion of the answer,The person who tested,Status of completion,Any addtional remarks
-1,Background and services of Healthserve,Understand,What is HealthServe?,Provide information about Health Serve,"HealthServe is a charity organization that was founded in 2006 with Christian values. It aims to meet the needs of migrant workers in the community through various activities such as medical and dental services, casework and social services, and advocacy for the wellbeing of migrant workers. HealthServe is registered as a charity under the Charities Act and is approved as an Institution of a Public Character.",docs\\Personal Data Protection Policy - HealthServe.pdf,"metadata={'page': 3, 'source': 'docs\\Code of Conduct Policy - HealthServe.pdf'})
-metadata={'page': 3, 'source': 'docs\\Personal Data Protection Policy - HealthServe.pdf'})
-metadata={'page': 0, 'source': 'docs\\Personal Data Protection Policy - HealthServe.pdf'})",Faisal,TRUE,
-2,Background and services of Healthserve,Understand,What can HealthServe do?,,"HealthServe can provide holistic health and social care to migrant workers, including medical and dental services, rehabilitation, and research-driven advocacy. They also advocate for the needs and well-being of migrant workers and aim to bridge communities through meaningful engagement and partnerships.",,,Faisal,FALSE,
-3,Background and services of Healthserve,Understand,What are services offered by HealthServe?,,"The services offered by HealthServe include medical and dental services, mental health and counseling services, and casework and social services.",,,Faisal,FALSE,
-4,Background and services of Healthserve,Understand,What is the organisational structure of HealthServe?,,"The organisational structure of HealthServe consists of a CEO who oversees various departments. These departments include Mental Health & Community Services, Psychotherapy & Counselling, Training & Development, Outreach & Engagement, Social Services, Crisis Helpline, Dental Services, and Medical Services. Additionally, there is a COO who manages Corporate Services, Volunteer Management, Finance & Operations, Fundraising & Donor Management, Human Resources, and Comms & Partnerships.",,,Faisal,FALSE,
-5,Background and services of Healthserve,Understand,"What is the vision, mission of HealthServe?",,"The vision of HealthServe is for every migrant worker to live a life of health, well-being, and dignity. The mission of HealthServe is to bring hope and healing to migrant workers through the provision of holistic health and social care, advocate for their needs and well-being, and bridge communities through meaningful engagement and partnerships.",,,Faisal,FALSE,
-6,Cultural understanding of migrant workers,,What challenges do migrant workers face in their home countries?,,"Some challenges that migrant workers may face in their home countries include difficulties in changing jobs, language barriers, legal issues, and lack of support from employers to pursue education or training. They may also face challenges in repaying debts and securing new job opportunities.",,,,FALSE,
-7,Cultural understanding of migrant workers,,How are migrant workers typically recruited for jobs abroad?,,"Migrant workers are typically recruited for jobs abroad through various processes. In the context provided, it is mentioned that the worker in question took an entrance exam and signed a repayment schedule for a loan to secure a job opportunity in Singapore. This suggests that some workers may rely on local recruiters or agents who connect them with job opportunities in foreign countries. Additionally, word of mouth within their community may also play a role in finding job openings. It is important to note that this is just one example and the recruitment process can vary depending on the specific circumstances and industries involved.",,,,FALSE,
-8,Cultural understanding of migrant workers,,What are the major industries that employ migrant workers?,,"Major industries that employ migrant workers in Singapore include construction, manufacturing, marine, services, and domestic work.
+Test Case ID,Tested By,Function,Bloom Taxonomy,Test Data,Expected Result,Generated Result,Source Document,Source Chuck,Parameters,Parameters Weight,Completed?,Accurate?,Comments
+,Faisal,Background and services of Healthserve,,"I received a compliant that, my client, a migrant worker did not get a proper treatment from the nurse, what steps should i do ?","Different doctors have different ways to diagnose illness. Foreign workers from China have the perception that some doctors are “responsible”
+, while others21
+are ""irresponsible""
+. The “responsible” doctors take time to listen to and examine (by asking detail
+questions) the worker properly before deciding upon diagnosis and giving a prescription. In contrast,
+the “irresponsible” doctors rush through, often prescribe painkillers or provide similar medicine every
+time. There are communication problems as such. The medical practitioners give the impression that
+the patients’ perception of their own sickness is not important. As one Chinese worker expressed","f you have received a complaint about improper treatment from a nurse, you should take the following steps:
 
-Helpful Answer in Tamil: சிங்கப்பூரில் வேலைக்காரர்களை பணியாற்றும் முதன்மை துறைகள் கட்டமைப்பு, உருவாக்கம், கடல் வேலை, சேவைகள் மற்றும் வீட்டு வேலைகள் ஆகும்.
+1. Listen to the complaint: Take the time to listen to the details of the complaint and understand the specific concerns raised by the individual.
 
-Helpful Answer in Bengali: সিঙ্গাপুরে চাকুরিবাজদের প্রধান শিল্পগুলি সংযোজিত করে নির্মাণ, উদ্যোগ, সাগরিক, পরিষেবা এবং গৃহকর্মী কাজ।
+2. Document the complaint: Make sure to document the complaint in writing, including the date, time, and details of the incident as provided by the complainant.
 
-Helpful Answer in Mandarin: 在新加坡，主要雇佣外籍劳工的行业包括建筑、制造、海洋、服务和家庭工作。",,,,FALSE,
-9,Cultural understanding of migrant workers,Understand,What are the working conditions like for migrant workers in various countries?,,"The working conditions for migrant workers vary in different countries. In Singapore, migrant workers, particularly those in the shipping and construction sectors, face various constraints in accessing health services. There is also a risk of occupational accidents and exposure to occupational-related diseases. Migrant workers may also face challenges in communication and language barriers, which can affect their ability to convey information about their physical and other problems. Additionally, there may be issues related to unfair treatment, non-payment of salaries, and deductions in pay. It is important to address these challenges and provide adequate support and services to ensure the well-being and rights of migrant workers.","Report_MigrantStudy_HealthServe_FINAL.pdf
-NVPC-MW-Colabs-Report.pdf
-iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf
-HealthcareSeekingBehaviour.NUS_.Apr2013.pdf
-Ethics on Migrant workers.pdf
-HealthcareSeekingBehaviour.NUS_.Apr2013.pdf","metadata = { 'page' : 18  'source': docs/Report_MigrantStudy_HealthServe_FINAL.pdf}
-metadata = { 'page' : 22  'source': docs/NVPC-MW-Colabs-Report.pdf}
-metadata = { 'page' : 7  'source': docs/docs/docs/iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf}
-metadata = { 'page' : 40  'source': docs/docs/docs/iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf}
-metadata = { 'page' : 6  'source': docs/docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf}
-metadata = { 'page' : 15  'source': docs/docs/Ethics on Migrant workers.pdf}
-metadata = { 'page' : 34  'source': docs/docs/docs/Report_MigrantStudy_HealthServe_FINAL.pdf}
-metadata = { 'page' : 33  'source': docs/docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf}
-metadata = { 'page' : 4  'source': docs/docs/Ethics on Migrant workers.pdf}
-metadata = { 'page' : 5  'source': HealthcareSeekingBehaviour.NUS_.Apr2013.pdf}",Wei En,TRUE,
-10,Cultural understanding of migrant workers,,Are there any policies in place to protect the rights of migrant workers?,,"Yes, countries have policies in place to protect the rights of migrant workers. These policies aim to prevent abuse, exploitation, and violations of workers' rights. They may include regulations on recruitment fees, prohibition of subagents, and the establishment of grievance mechanisms. Additionally, countries may have agreements with each other, such as Memoranda of Understanding (MOUs), to ensure the fair treatment and protection of migrant workers.","Ethics on Migrant workers.pdf
-iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf
-Healthcare-seeking-behaviour-barriers-and-mental-health-of-non-domestic-migrant-workers-in-Singapore.pdf
-HealthcareSeekingBehaviour.NUS_.Apr2013.pdf
-NVPC-MW-Colabs-Report.pdf
-iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf
-iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf
-NVPC-MW-Colabs-Report.pdf
-Ethics on Migrant workers.pdf
-Ethics on Migrant workers.pdf","metadata = {'page':42""source"": docs/Ethics on Migrant workers.pdf}
-metadata = {'page':15""source"": docs/iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf}
-metadata = {'page':1""source"": docs/Healthcare-seeking-behaviour-barriers-and-mental-health-of-non-domestic-migrant-workers-in-Singapore.pdf}
-metadata = {'page':27""source"": docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf}
-metadata = {'page':22""source"": docs/NVPC-MW-Colabs-Report.pdf}
-metadata = {'page':15""source"": docs/iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf}
-metadata = {'page':4""source"": docs/iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf}
-metadata = {'page':22""source"": docs/NVPC-MW-Colabs-Report.pdf}
-metadata = {'page':39""source"": docs/Ethics on Migrant workers.pdf}
-metadata = {'page':21""source"": docs/Ethics on Migrant workers.pdf}
-",,FALSE,
-11,Cultural understanding of migrant workers,,How do migrant workers contribute to the economy of their host countries?,,"Migrant workers contribute to the economy of their host countries in several ways. They are often willing to accept lower wages than local workers, which can help companies reduce labor costs. Migrant workers are also willing to do work that the local workforce may not be willing to do, such as jobs in remote areas or industries with labor shortages. Additionally, migrant workers may have specialized skills that are in demand and not readily available among the local workforce. Their contributions can lead to increased productivity, higher salaries, greater mobility for workers, and more exposure and skills for future opportunities.","iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf
-NVPC-MW-Colabs-Report.pdf
-Report_MigrantStudy_HealthServe_FINAL.pdf
-NVPC-MW-Colabs-Report.pdf
-Healthcare-seeking-behaviour-barriers-and-mental-health-of-non-domestic-migrant-workers-in-Singapore.pdf
-NVPC-MW-Colabs-Report.pdf
-Ethics on Migrant workers.pdf
-Ethics on Migrant workers.pdf
-NVPC-MW-Colabs-Report.pdf
-iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf","metadata = {'page':7""source"": docs/iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf}
-metadata = {'page':5""source"": docs/NVPC-MW-Colabs-Report.pdf}
-metadata = {'page':34""source"": docs/Report_MigrantStudy_HealthServe_FINAL.pdf}
-metadata = {'page':50""source"": docs/NVPC-MW-Colabs-Report.pdf}
-metadata = {'page':10""source"": docs/Healthcare-seeking-behaviour-barriers-and-mental-health-of-non-domestic-migrant-workers-in-Singapore.pdf}
-metadata = {'page':50""source"": docs/NVPC-MW-Colabs-Report.pdf}
-metadata = {'page':45""source"": docs/Ethics on Migrant workers.pdf}
-metadata = {'page':15""source"": docs/Ethics on Migrant workers.pdf}
-metadata = {'page':20""source"": docs/NVPC-MW-Colabs-Report.pdf}
-metadata = {'page':4""source"": docs/iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf}",,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
-,,,,,,,,,FALSE,
+3. Investigate the complaint: Conduct a thorough investigation into the complaint by gathering relevant information and speaking to any witnesses or individuals involved.
+
+4. Address the issue: If the complaint is found to be valid, take appropriate action to address the issue. This may involve providing additional training to the nurse, implementing corrective measures, or taking disciplinary action if necessary.
+
+5. Follow up with the complainant: Keep the complainant informed about the progress of the investigation and any actions taken to address the issue. Offer support and reassurance that their concerns are being taken seriously.
+
+6. Maintain confidentiality: Ensure that the complainant's identity and the details of the complaint are kept confidential, in line with HealthServe's policy on handling such matters.
+
+If you require further guidance or assistance in handling the complaint, please consult your manager or supervisor.","[{""metadata"":{""page"":43,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""type"":""Document""},{""metadata"":{""page"":6,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""type"":""Document""},{""metadata"":{""page"":20,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""type"":""Document""}]","[{""type"": ""Document"", ""metadata"": {""page"": 0, ""source"": ""docs/others.pdf""}, ""page_content"": ""those who purposely evade their responsibilities, including not complyi LC orders.  What can I do if I feel that I am not given sufficient sick leave?  If you feel you are not given sufficient sick leave, you should return to the same doctor and inform him that you need more sick leave to recover. If you have an ongoing work injury compensation claim and continue to face issues in this area, you should raise this with the case officer assisting with your claim.  What happens if I am not provided a Letter of Guarantee (LOG) from my employer for my medical treatment?  If you are a Work Permit holder, your employer should bear the costs of providing medical treatment (inpatient and outpatient), regardless of whether the conditions are work-related. If you are denied from having medical treatment, you should contact MOM immediately. MOM will take appropriate enforcement actions against errant employers who fail to provide medical treatment.  What should I do if I am forced to sign on""}, {""type"": ""Document"", ""metadata"": {""page"": 8, ""source"": ""docs/Onboarding_Final_for chatbot.pdf""}, ""page_content"": ""relating toany aspect ofthe organisationâ€™s operations, including potential breaches ofthe Code ofConduct by\nemployees .HealthServe treats such reports with strict confidentiality .\nâ€¢Should any party come across possible corporate oremployee improprieties, they are encouraged towrite in\ntowhistleblow@healthserve .org.sgimmediately and ingood faith .[Click toview details ofthepolicy]\n9Step 1\nInformalThis is applicable where the employee resolves the problem within the team.\nStep 2\nFormalThis happens when Step 1 does not resolve the grievances and the employee has the right to submit a written \nstatement to the CEO. The employee should outline the relevant facts that form the basis of his grievance.\nStep 3\nAppealWhere the  employee is not satisfied with the response of the CEO, the employee could appeal to the NHRC and if \nnecessary, to the Board in writing with a copy to the CEO. The Board will respond to the employee in writing within a""}, {""type"": ""Document"", ""metadata"": {""page"": 0, ""source"": ""docs/others.pdf""}, ""page_content"": ""you should contact MOM immediately. MOM will take appropriate enforcement actions against errant employers who fail to provide medical treatment.  What should I do if I am forced to sign on salary vouchers without receiving my salary?  You should not sign on salary vouchers if you did not receive your salary. If this happened, you should make a police report immediately.  What should I do if I do not trust the doctors appointed by my employer?  If you have a valid concern, you should lodge a case with MOM or raise this issue to the case officer who is assisting with your claims.  What should I do if my employer attempts or threatens to send me home when I have outstanding salary claim?  If you have a valid salary claim, you should file your claim online at TADM \tas early as possible, as this will give you a higher chance of recovering the salaries owed to you. If your employer sends you to the airport without paying your salary, approach the immigration officers at the airport for""}]",Top k,3,TRUE,TRUE,
+,Faisal,Cultural understanding of migrant workers,,"I was touched by an migrant worker, and i felt uncomfortable, im not sure if hes intentional what should i do","Provide solutions to report the incident such as ensuring safety, incident reporting, follow company procedures","If you have been touched by a migrant worker and felt uncomfortable, it is important to take the following steps:
+
+1. Ensure your safety: If you feel threatened or unsafe, remove yourself from the situation and find a safe space.
+
+2. Report the incident: Inform your supervisor or manager about what happened. They will guide you on the appropriate steps to take and may initiate an investigation if necessary.
+
+3. Seek support: If you are feeling distressed or unsure about the incident, reach out to a trusted colleague, friend, or family member for emotional support.
+
+4. Document the incident: Write down the details of the incident, including the date, time, location, and any other relevant information. This documentation may be helpful if further action needs to be taken.
+
+5. Follow company procedures: Follow any protocols or procedures that your organization has in place for handling such incidents. This may involve filing a formal complaint or providing a statement.
+
+6. Seek professional help if needed: If you are experiencing significant distress or trauma as a result of the incident, consider seeking support from a counselor, therapist, or other mental health professional.
+
+Remember, it is important to take any incident of discomfort or inappropriate behavior seriously and report it to the appropriate channels. Your organization should have policies in place to address such situations and ensure the safety and well-being of all employees.","[
+  {
+    ""metadata"": {
+      ""page"": 43,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  },
+  {
+    ""metadata"": {
+      ""page"": 6,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  },
+  {
+    ""metadata"": {
+      ""page"": 20,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  }
+]","[{""type"": ""Document"", ""metadata"": {""page"": 22, ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""}, ""page_content"": ""â€¢ Workers being poached or complicating the transfers process through negotiations.\nâ€¢ Workers â€œthreateningâ€ to go to the authorities even when employers feel they are in the right.\nâ€¢ Workers going directly to authorities and for medical check-ups without the employerâ€™s knowledge.\nHow might we...\nâ€¢ Take the time to understand each other as persons more and \nto grow in empathy?\nâ€¢ Build on existing efforts to further ensure the protection of \nworkers who may face wage, benefits, and rights exploitation?Some migrant workers â€œcan \nthreaten to go [to] MOM for the slightest issue that they face even when the employer is right.â€\n- Trade association input""}, {""type"": ""Document"", ""metadata"": {""page"": 4, ""source"": ""docs/others.pdf""}, ""page_content"": ""20. \""Welcome! Do you need assistance with understanding the local laws and regulaDons that pertain to migrant workers?\"" 21. \""Hello! Have you experienced any cultural diï¬€erences that you'd like to discuss or seek advice on?\"" 22. \""Good day! We're here to ensure you have access to proper legal support if needed. Are you aware of your legal rights?\"" 23. \""Hi! Are there any religious or spiritual communiDes you'd like to connect with in the area?\"" 24. \""GreeDngs! How can we support you in maintaining your mental and emoDonal well-being while being a migrant worker?\"" 25. \""Welcome! Is there anything you'd like to learn about the local cuisine and food opDons?\"" 26. \""Hello! Are you interested in volunteering or engaging in community service acDviDes during your free Dme?\"" 27. \""Good to meet you! Have you had the chance to explore any local cultural museums or exhibiDons?\"" 28. \""Hi! We're here to provide informaDon on educaDonal opportuniDes for yourself or your family, if applicable.\"" 29.""}, {""type"": ""Document"", ""metadata"": {""page"": 21, ""source"": ""docs/Ethics on Migrant workers.pdf""}, ""page_content"": ""20 I Best Practice Guidance on Ethical Recruitment of Migrant Workersstakeholder group invites government representatives from both sides of the border into the discussion. Its meetings have been attended by the Mexican embassy staff. With the rollout of Company Xâ€™s new policy, growers will have to become more account-able for their operations, especially when it comes to contracting workers to meet new expectations in compliance with the No Fees policy. The penalties for violations of the Migrant and Seasonal Agricultural Worker Protection Act (MSPA) are both civil and criminal. Among the 30 possible violations are issues related to payment of wages, poor housing conditions, lack of health and safety safeguards, use of an unregistered crew lead-er, overcrowding, failure to provide safe transport, failure to ensure drivers are licensed, and failure to register employees. The company contracts produce growers directly and since 2015 started using third-party bilingual assessors to""}]",Top k,3,TRUE,TRUE,
+,Faisal,Situational awareness,,"A migrant worker approach me and told me that he felt he has overworked, what should i do ?","Fatigue due to excessive work (longer working hours and overtime as well as working during the
+holidays) causes health hazards and contributes to low productivity as well. Robotic work
+environment leads to health degradation and consequently productivity loss. For the sake of
+economic gain and repayment of high debts, workers are prepared to adopt monotonous work life
+that is often “unfulfilling and without real satisfaction and joy”
+. Most of the workers are keen to work on
+Sundays to earn overtime, which is double of the weekday wages. One has to put this in the context
+that many workers have paid at least $8,000 as agency fee and earn only S$300-500 per month.
+When the availability of overtime is reduced, workers experience financial hardship. As such, one of
+the respondents commented that ""now it is difficult to recuperate the debt after meeting our needs in
+Singapore”","If a migrant worker approaches you and expresses that they feel overworked, it is important to take their concerns seriously and address the issue appropriately. Here are some steps you can take:
+
+1. Listen actively: Give the worker your full attention and listen to their concerns without interruption. Show empathy and understanding.
+
+2. Assess the situation: Ask the worker about their working hours, rest days, and any specific tasks or responsibilities that are causing them to feel overworked. Gather as much information as possible to understand the extent of the issue.
+
+3. Provide support: Offer reassurance and let the worker know that their well-being is important. Inform them that you will take their concerns seriously and work towards finding a solution.
+
+4. Consult with the relevant authorities: Depending on your role and responsibilities, consult with your supervisor, manager, or HR department to discuss the worker's concerns and seek guidance on how to address the issue.
+
+5. Investigate further: If necessary, conduct a thorough investigation to gather more information about the worker's workload and working conditions. This may involve speaking to other workers or supervisors, reviewing work schedules, and assessing compliance with labor laws and regulations.
+
+6. Take appropriate action: Based on the findings of the investigation, take appropriate action to address the worker's concerns. This may involve adjusting their workload, ensuring they receive adequate rest days, or addressing any other issues that contribute to their feeling of being overworked.
+
+7. Follow up: Regularly check in with the worker to monitor their well-being and ensure that the necessary changes have been implemented. Provide ongoing support and encourage open communication.
+
+Remember, it is important to prioritize the health and well-being of the migrant worker and ensure that their rights are protected. If you are unsure about how to handle the situation, seek guidance from your supervisor or refer to official HealthServe documentation.","[
+  {
+    ""metadata"": {
+      ""page"": 43,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  },
+  {
+    ""metadata"": {
+      ""page"": 6,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  },
+  {
+    ""metadata"": {
+      ""page"": 20,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  }
+]","[{""type"": ""Document"", ""metadata"": {""page"": 31, ""source"": ""docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf""}, ""page_content"": ""For the minority of workers who reported working >65 hours per week or those who did not get any rest days per month, there could be future studies looking into the honesty of such responses, such as conducting an in-depth face-to-face interview with the workers and finding out the amount of control they have over the working hours. The research could also look into reasons and justifications behind such extended working hours, and consequences of such practices, that could be detrimental to the workersâ€™ physical and psychological health.  Also when migrant workers fell ill, substantial numbers also quoted the additional use of â€˜traditional medicineâ€™. There could be more research looking into what such â€˜traditional medicinesâ€™ are, and if they are harmful to health. There was also a minority who reported not seeing a doctor when they were ill as their supervisors did not allow them to or due to fear of being sent home. Future studies may want to elucidate the reasons behind perceiving""}, {""type"": ""Document"", ""metadata"": {""page"": 17, ""source"": ""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""}, ""page_content"": ""18 \n 4.1.3.2. Loneliness  \nOverwork and l iving away from parents, siblings, relatives and friends make the migrant workers \nlonely as well as develop feelings of alienation among them. In Singapore, they are unable to get \npersonal care and nursing attendance dur ing their period of sickness compared to that at home. \nHence one Tamil male worker commented, â€œHere, in Singapore, there is no one to ask me about my well -\nbeing or what I do â€. This situation, coupled with various workplace hazards and social despise, make \nthem feel that â€œas far as foreign workers are concerned, we are only treated as second class residents â€. Both \nthe Chinese  and Indian workers stated that â€œno one care about our emotional well being and problems \nhereâ€. According to a Chinese woman:  \nâ€œApart f rom my work, I feel lonely and constricted, unless back home when I was happier and could \nvisit different places. For the past three years, there were hardly any joyful moments; it is like""}, {""type"": ""Document"", ""metadata"": {""page"": 17, ""source"": ""docs/Ethics on Migrant workers.pdf""}, ""page_content"": ""17  https://www.youtube.com/watch?v=JuLX3u94q_Y\nA migrant worker on a production line in a glass-blowing facility in Taiwan.Excessive government-imposed fees create enormous risks for workers: they incentivize illegal migration through unregistered brokers that bypass those govern-ment regulations.""}]
+",Top k,3,TRUE,TRUE,
+,Faisal,Personal Data Protection Act (PDPA),,"I accidently sent a list of patient names into the wrong whatsapp group, and i received an compliants on PDPA, what should i do","start with a mediation of handling inital handling of complains, assessing the complaints, investigating the compliants, responding to compliants","Based on the provided information, here are the steps you should take:
+
+1. Immediately acknowledge the complaint received from the individual who reported the incident.
+2. Record the complaint in the data protection complaint register to keep track of its status.
+3. Inform the Chief Data Protection Officer (DPO) about the complaint.
+4. Assign an investigation officer to follow up on the complaint.
+5. Assess the validity of the complaint and determine if the organization has not complied with any Data Protection or Do Not Call provisions.
+6. Assess the impact and severity of the complaint.
+7. If the complaint is valid, escalate it to the appropriate level of management based on the defined escalation level.
+8. Take necessary actions to rectify the situation and prevent similar incidents from happening in the future.
+
+Please note that the turnaround time for each step is not specified in the provided information. It is important to consult your supervisor or refer to official HealthServe documentation for specific guidance on handling complaints related to PDPA.","[
+  {
+    ""metadata"": {
+      ""page"": 43,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  },
+  {
+    ""metadata"": {
+      ""page"": 6,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  },
+  {
+    ""metadata"": {
+      ""page"": 20,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  }
+]","[
+  {
+    ""type"": ""Document"",
+    ""metadata"": {
+      ""page"": 43,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""page_content"": ""Reflection from migrant worker engagements\nâ€œImportant to figure out which are the needs and which are the wants - resources are limited and small wins are better than analysis paralysis.â€\nEmployer participant\nâ€œFocus on community building for workers in their living conditions/dorms (under Covid) and also integration with the community-at-large.â€\nNPO participant\nSocial connection \nbetween residents and \nmigrant workersQuality of life in \nSingaporeCost of living in \nSingapore\nExisting wage \npolicy in \nSingapore""
+  },
+  {
+    ""type"": ""Document"",
+    ""metadata"": {
+      ""page"": 6,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""page_content"": ""4Our stakeholder engagements focused on the migrant \nworker situation in Singapore. But knowing some of the \nsimilarities and differences between us and other countries can help contextualise our understanding, so that we do not understate our progress or overstate the gaps in our ecosystem.\nFor example,\nâ€¢\tKuwaitâ€™s legacy Kafala system, where workers \nare legally bound to individual sponsors, left â€˜considerable room for exploitation â€™.\nâ€¢ Fragmented national and provincial regulations and historical circumstances in Thailand have contributed to high numbers of undocumented \nworkers .\nâ€¢ There are an estimated 1 to 3 million undocumented  \nworkers in Malaysia, with raids during Covid-19 \nlockdowns to detain such workers. Furthermore, in December 2020, Malaysiaâ€™s Human Resources Minister said that 91.1% or 1.4 million workers were not provided with accommodation compliant with regulations.\nâ€¢ In Hong Kong , regulations relating to the entry of""
+  },
+  {
+    ""type"": ""Document"",
+    ""metadata"": {
+      ""page"": 20,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""page_content"": ""All these economic factors are closely interlinked. We need \nmore research and open sharing of the realities and challenges faced by all stakeholders, as well as the boundaries of the system.\nPhoto credit: FUTURE on Unsplashâ€œ[Our] key observations are that we have an employment structure for migrant workers where workers bear too much cost and employers bear too much risk.â€\n- Independent participantâ€œAll things considered \n(there are many issues our migrant workers face) but there is a consistent point here, especially in how we hear them settling huge debts to contribute to us.â€\n- Employer participant\nâ€œWe need to not oversimplify the problems as there are a lot of interlinked causal factors. Employers also have pressures, constraints and stakeholders as well that add to the complexity.â€""
+  }
+]",Top k,3,TRUE,TRUE,
+,Faisal,Situational awareness,,"A migrant worker approach me and told me that he suspect that he might contact with STD, what should i advise ?","anonymous HIV counseling and
+testing services and to set up “integrated” community drop-in centers that provide
+relationship and value education so that foreign workers can build and maintain healthy
+relationship with one another and with opposite sex","I'm not a doctor, but if a migrant worker approaches you with concerns about potentially contracting an STD, it would be advisable to encourage them to seek medical attention as soon as possible. They should visit a healthcare professional or a clinic that specializes in STD testing and treatment. It's important to emphasize the importance of early detection and treatment for STDs to prevent further complications. Additionally, you can provide information about HealthServe's subsidized medical services and suggest that they reach out to HealthServe for further guidance and support.","[
+  {
+    ""metadata"": {
+      ""page"": 43,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  },
+  {
+    ""metadata"": {
+      ""page"": 6,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  },
+  {
+    ""metadata"": {
+      ""page"": 20,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""type"": ""Document""
+  }
+]","[
+  {
+    ""type"": ""Document"",
+    ""metadata"": {
+      ""page"": 43,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""page_content"": ""Reflection from migrant worker engagements\nâ€œImportant to figure out which are the needs and which are the wants - resources are limited and small wins are better than analysis paralysis.â€\nEmployer participant\nâ€œFocus on community building for workers in their living conditions/dorms (under Covid) and also integration with the community-at-large.â€\nNPO participant\nSocial connection \nbetween residents and \nmigrant workersQuality of life in \nSingaporeCost of living in \nSingapore\nExisting wage \npolicy in \nSingapore""
+  },
+  {
+    ""type"": ""Document"",
+    ""metadata"": {
+      ""page"": 6,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""page_content"": ""4Our stakeholder engagements focused on the migrant \nworker situation in Singapore. But knowing some of the \nsimilarities and differences between us and other countries can help contextualise our understanding, so that we do not understate our progress or overstate the gaps in our ecosystem.\nFor example,\nâ€¢\tKuwaitâ€™s legacy Kafala system, where workers \nare legally bound to individual sponsors, left â€˜considerable room for exploitation â€™.\nâ€¢ Fragmented national and provincial regulations and historical circumstances in Thailand have contributed to high numbers of undocumented \nworkers .\nâ€¢ There are an estimated 1 to 3 million undocumented  \nworkers in Malaysia, with raids during Covid-19 \nlockdowns to detain such workers. Furthermore, in December 2020, Malaysiaâ€™s Human Resources Minister said that 91.1% or 1.4 million workers were not provided with accommodation compliant with regulations.\nâ€¢ In Hong Kong , regulations relating to the entry of""
+  },
+  {
+    ""type"": ""Document"",
+    ""metadata"": {
+      ""page"": 20,
+      ""source"": ""docs/NVPC-MW-Colabs-Report.pdf""
+    },
+    ""page_content"": ""All these economic factors are closely interlinked. We need \nmore research and open sharing of the realities and challenges faced by all stakeholders, as well as the boundaries of the system.\nPhoto credit: FUTURE on Unsplashâ€œ[Our] key observations are that we have an employment structure for migrant workers where workers bear too much cost and employers bear too much risk.â€\n- Independent participantâ€œAll things considered \n(there are many issues our migrant workers face) but there is a consistent point here, especially in how we hear them settling huge debts to contribute to us.â€\n- Employer participant\nâ€œWe need to not oversimplify the problems as there are a lot of interlinked causal factors. Employers also have pressures, constraints and stakeholders as well that add to the complexity.â€""
+  }
+]",Top k,3,TRUE,TRUE,
+,Wei En,Background and services of Healthserve,,"I received a compliant that, my client, a migrant worker did not get a proper treatment from the nurse, what steps should i do ?","Different doctors have different ways to diagnose illness. Foreign workers from China have the perception that some doctors are “responsible”
+, while others21
+are ""irresponsible""
+. The “responsible” doctors take time to listen to and examine (by asking detail
+questions) the worker properly before deciding upon diagnosis and giving a prescription. In contrast,
+the “irresponsible” doctors rush through, often prescribe painkillers or provide similar medicine every
+time. There are communication problems as such. The medical practitioners give the impression that
+the patients’ perception of their own sickness is not important. As one Chinese worker expressed","If you receive a complaint that a migrant worker did not receive proper treatment from a nurse, you should take the following steps:\n\n1. Listen to the complaint: Take the time to listen to the details of the complaint and gather all relevant information.\n\n2. Document the complaint: Make sure to document the complaint accurately, including the date, time, and details of the incident.\n\n3. Investigate the complaint: Conduct a thorough investigation into the complaint to gather all the facts and evidence.\n\n4. Address the issue: If the complaint is valid, take appropriate action to address the issue and ensure that the migrant worker receives proper treatment.\n\n5. Follow up: After addressing the issue, follow up with the migrant worker to ensure that they are satisfied with the resolution and that their healthcare needs are being met.\n\n6. Report the incident: If necessary, report the incident to the appropriate authorities or supervisor within HealthServe for further action.\n\nRemember, it is important to handle complaints regarding improper treatment seriously and ensure that migrant workers receive the necessary care and support they require."",","[{""metadata"":{""page"":24,""source"":""docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf""},""type"":""Document""},{""metadata"":{""page"":0,""source"":""docs/others.pdf""},""type"":""Document""},{""metadata"":{""page"":22,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""type"":""Document""},{""metadata"":{""page"":22,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""type"":""Document""},{""metadata"":{""page"":35,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""type"":""Document""},{""metadata"":{""page"":0,""source"":""docs/others.pdf""},""type"":""Document""},{""metadata"":{""page"":12,""source"":""docs/Healthcare-seeking-behaviour-barriers-and-mental-health-of-non-domestic-migrant-workers-in-Singapore.pdf""},""type"":""Document""},{""metadata"":{""page"":35,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""type"":""Document""},{""metadata"":{""page"":21,""source"":""docs/Ethics on Migrant workers.pdf""},""type"":""Document""},{""metadata"":{""page"":8,""source"":""docs/Onboarding_Final_for chatbot.pdf""},""type"":""Document""}]","[{""type"":""Document"",""metadata"":{""page"":24,""source"":""docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf""},""page_content"":""be educated on their rights, as well as channels to approach should they face such difficulties at work. No migrant worker should be wrongfully made to work if he/she suffers from medical problems that could pose a threat to their health and livelihood.   With regard to payment, majority of the respondents believe that their company will play a role in the management of their healthcare costs and at least partake in the compensation of medical bills.(figure 2) However, for the minority, their belief is that that they will have to foot majority of the bill. This may be detrimental to their health-seeking predisposition. Once again, efforts to educate migrant workers of their rights and their company’s obligation to be responsible for their healthcare should be stepped up.  2) Actual Experience and Potential Barriers to Healthcare 87.1% (n=236) of our respondents who had fallen sick in Singapore before chose to see a doctor when they suffered an illness/injury (figure 3).  Skin""},{""type"":""Document"",""metadata"":{""page"":0,""source"":""docs/others.pdf""},""page_content"":""those who purposely evade their responsibilities, including not complyi LC orders.  What can I do if I feel that I am not given sufficient sick leave?  If you feel you are not given sufficient sick leave, you should return to the same doctor and inform him that you need more sick leave to recover. If you have an ongoing work injury compensation claim and continue to face issues in this area, you should raise this with the case officer assisting with your claim.  What happens if I am not provided a Letter of Guarantee (LOG) from my employer for my medical treatment?  If you are a Work Permit holder, your employer should bear the costs of providing medical treatment (inpatient and outpatient), regardless of whether the conditions are work-related. If you are denied from having medical treatment, you should contact MOM immediately. MOM will take appropriate enforcement actions against errant employers who fail to provide medical treatment.  What should I do if I am forced to sign on""},{""type"":""Document"",""metadata"":{""page"":22,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""page_content"":""• Workers being poached or complicating the transfers process through negotiations.\n• Workers “threatening” to go to the authorities even when employers feel they are in the right.\n• Workers going directly to authorities and for medical check-ups without the employer’s knowledge.\nHow might we...\n• Take the time to understand each other as persons more and \nto grow in empathy?\n• Build on existing efforts to further ensure the protection of \nworkers who may face wage, benefits, and rights exploitation?Some migrant workers “can \nthreaten to go [to] MOM for the slightest issue that they face even when the employer is right.”\n- Trade association input""},{""type"":""Document"",""metadata"":{""page"":22,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""page_content"":""don’t seem to care about us.”  \n  \nOne of the  GPs we interviewed commented that  \n“There is no rule for  outpatient treatment of foreign workers. They (migrants) have no right to take \nsick leave. Ideally the company that employs foreign workers, should treat them (migrants) as other \nemployees, they (migrants) should be able to know their rights, able to seek  medical care and claims; \ne.g. maximum claim per year, entitlement of number of MCs and days of hospitalization per annum. ” \n \n4.2.4. Long Waiting Time  \nWorkers complained about long waiting hours in the hospitals and clinics, about 5 -8 hours. Some of \nthem were released around 3 pm, while they checked -in at 10 am; even some had to spend 8 am to \n4 pm in the hospitals and clinics. In some of these cases, they could not even get medical leave if the \ndoctor did not consider this eligibility. This in turn compelled  them to take leave without pay from \nthe work, affecting their productivity and resting time.""},{""type"":""Document"",""metadata"":{""page"":35,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""page_content"":""6.3.2.1 . For  the Ministry  \na. To ensure that the Sick leave section 89 of the Employment A cts (C hapter 91) is \nproperly implement ed to all workers including foreign workers  and act ive \nmonitor ing of the  employers’ compliance with such standards, and taking step  \nagainst non -compliance . \ni. Migrant workers should have sufficient training on key employment terms \nprior to coming to Singapore . This includes contract terms and conditions \nand the process, knowledge of their rights and responsibility (including \nworkman injury compensation acts, knowledge and access to resources in \nSingapore, cultural awareness and sufficient language ability.  \nii. To provide more resource guide to the migrant workers detailing the \navailable resources for reporting maltreatment.  \niii. As an interim solution, invest in or support the  existing hotlines to increase \ntransparency and provide communication channels to migrant worke rs.""},{""type"":""Document"",""metadata"":{""page"":0,""source"":""docs/others.pdf""},""page_content"":""you should contact MOM immediately. MOM will take appropriate enforcement actions against errant employers who fail to provide medical treatment.  What should I do if I am forced to sign on salary vouchers without receiving my salary?  You should not sign on salary vouchers if you did not receive your salary. If this happened, you should make a police report immediately.  What should I do if I do not trust the doctors appointed by my employer?  If you have a valid concern, you should lodge a case with MOM or raise this issue to the case officer who is assisting with your claims.  What should I do if my employer attempts or threatens to send me home when I have outstanding salary claim?  If you have a valid salary claim, you should file your claim online at TADM \tas early as possible, as this will give you a higher chance of recovering the salaries owed to you. If your employer sends you to the airport without paying your salary, approach the immigration officers at the airport for""},{""type"":""Document"",""metadata"":{""page"":12,""source"":""docs/Healthcare-seeking-behaviour-barriers-and-mental-health-of-non-domestic-migrant-workers-in-Singapore.pdf""},""page_content"":""worker. 12 May 2016. http://www.todayonline.com/singapore/landmark-ruling-against-doctor-ngos-say-inadequate-mcs-migrant-workers-still-problem (accessed 1 Oct 2016).\nAng JW, et al.BMJ Glob Health 2017; 2:e000213. doi:10.1136/bmjgh-2016-000213 13BMJ Global Health on March 15, 2022 by guest. Protected by copyright. http://gh.bmj.com/ BMJ Glob Health: first published as 10.1136/bmjgh-2016-000213 on 9 March 2017. Downloaded from""},{""type"":""Document"",""metadata"":{""page"":35,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""page_content"":""iii. As an interim solution, invest in or support the  existing hotlines to increase \ntransparency and provide communication channels to migrant worke rs. \nb. To establish  health care standards in term s of culturally  competent care, language \naccess services and organizational support for cultural competence  at migrant “hot \nspots”.  The following measures  need to be taken :""},{""type"":""Document"",""metadata"":{""page"":21,""source"":""docs/Ethics on Migrant workers.pdf""},""page_content"":""20  I  Best Practice Guidance on Ethical Recruitment of Migrant Workersstakeholder group invites government representatives from both sides of the border into the discussion. Its meetings have been attended by the Mexican embassy staff. With the rollout of Company X’s new policy, growers will have to become more account-able for their operations, especially when it comes to contracting workers to meet new expectations in compliance with the No Fees policy. The penalties for violations of the Migrant and Seasonal Agricultural Worker Protection Act (MSPA) are both civil and criminal. Among the 30 possible violations are issues related to payment of wages, poor housing conditions, lack of health and safety safeguards, use of an unregistered crew lead-er, overcrowding, failure to provide safe transport, failure to ensure drivers are licensed, and failure to register employees. The company contracts produce growers directly and since 2015 started using third-party bilingual assessors to""},{""type"":""Document"",""metadata"":{""page"":8,""source"":""docs/Onboarding_Final_for chatbot.pdf""},""page_content"":""relating toany aspect ofthe organisation’s operations, including potential breaches ofthe Code ofConduct by\nemployees .HealthServe treats such reports with strict confidentiality .\n•Should any party come across possible corporate oremployee improprieties, they are encouraged towrite in\ntowhistleblow@healthserve .org.sgimmediately and ingood faith .[Click toview details ofthepolicy]\n9Step 1\nInformalThis is applicable where the employee resolves the problem within the team.\nStep 2\nFormalThis happens when Step 1 does not resolve the grievances and the employee has the right to submit a written \nstatement to the CEO. The employee should outline the relevant facts that form the basis of his grievance.\nStep 3\nAppealWhere the  employee is not satisfied with the response of the CEO, the employee could appeal to the NHRC and if \nnecessary, to the Board in writing with a copy to the CEO. The Board will respond to the employee in writing within a""}]",MMR,3,TRUE,TRUE,
+,Wei En,Cultural understanding of migrant workers,,"I was touched by an migrant worker, and i felt uncomfortable, im not sure if hes intentional what should i do","Provide solutions to report the incident such as ensuring safety, incident reporting, follow company procedures","If you have been touched by a migrant worker and felt uncomfortable, it is important to prioritize your safety and well-being. Here are some steps you can take:
+
+1. Remove yourself from the situation: If you are still in the presence of the worker and feel unsafe, try to distance yourself from them and find a safe space.
+
+2. Trust your instincts: If you felt uncomfortable, it is important to acknowledge your feelings and take them seriously. Your feelings are valid.
+
+3. Report the incident: Inform your supervisor, manager, or someone in a position of authority about what happened. They can guide you on the appropriate steps to take and provide support.
+
+4. Seek medical attention if necessary: If you have any physical injuries or concerns, it is advisable to seek medical attention. They can assess your condition and provide any necessary treatment.
+
+5. Document the incident: If possible, write down the details of the incident, including the date, time, location, and any relevant information about the worker involved. This can be helpful for any future investigations or actions.
+
+6. Follow company protocols: Your organization may have specific protocols in place for handling such incidents. Follow these protocols and cooperate with any investigations or actions that may be taken.
+
+Remember, it is important to prioritize your safety and well-being. If you have any doubts or concerns, do not hesitate to seek guidance from your supervisor, manager, or Human Resources department","[{""metadata"":{""page"":22,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""type"":""Document""},{""metadata"":{""page"":21,""source"":""docs/Ethics on Migrant workers.pdf""},""type"":""Document""},{""metadata"":{""page"":43,""source"":""docs/Ethics on Migrant workers.pdf""},""type"":""Document""},{""metadata"":{""page"":27,""source"":""docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf""},""type"":""Document""},{""metadata"":{""page"":45,""source"":""docs/Ethics on Migrant workers.pdf""},""type"":""Document""},{""metadata"":{""page"":27,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""type"":""Document""},{""metadata"":{""page"":19,""source"":""docs/Ethics on Migrant workers.pdf""},""type"":""Document""},{""metadata"":{""page"":2,""source"":""docs/Code of Conduct Policy - HealthServe.pdf""},""type"":""Document""},{""metadata"":{""page"":14,""source"":""docs/HealthServe-ARFY2021.pdf""},""type"":""Document""},{""metadata"":{""page"":7,""source"":""docs/iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf""},""type"":""Document""}]","[{""type"":""Document"",""metadata"":{""page"":22,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""page_content"":""• Workers being poached or complicating the transfers process through negotiations.\n• Workers “threatening” to go to the authorities even when employers feel they are in the right.\n• Workers going directly to authorities and for medical check-ups without the employer’s knowledge.\nHow might we...\n• Take the time to understand each other as persons more and \nto grow in empathy?\n• Build on existing efforts to further ensure the protection of \nworkers who may face wage, benefits, and rights exploitation?Some migrant workers “can \nthreaten to go [to] MOM for the slightest issue that they face even when the employer is right.”\n- Trade association input""},{""type"":""Document"",""metadata"":{""page"":21,""source"":""docs/Ethics on Migrant workers.pdf""},""page_content"":""20  I  Best Practice Guidance on Ethical Recruitment of Migrant Workersstakeholder group invites government representatives from both sides of the border into the discussion. Its meetings have been attended by the Mexican embassy staff. With the rollout of Company X’s new policy, growers will have to become more account-able for their operations, especially when it comes to contracting workers to meet new expectations in compliance with the No Fees policy. The penalties for violations of the Migrant and Seasonal Agricultural Worker Protection Act (MSPA) are both civil and criminal. Among the 30 possible violations are issues related to payment of wages, poor housing conditions, lack of health and safety safeguards, use of an unregistered crew lead-er, overcrowding, failure to provide safe transport, failure to ensure drivers are licensed, and failure to register employees. The company contracts produce growers directly and since 2015 started using third-party bilingual assessors to""},{""type"":""Document"",""metadata"":{""page"":43,""source"":""docs/Ethics on Migrant workers.pdf""},""page_content"":""42  I  Best Practice Guidance on Ethical Recruitment of Migrant WorkersWorker interviews in progress.""},{""type"":""Document"",""metadata"":{""page"":27,""source"":""docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf""},""page_content"":""This stems from the recognition that they must take ownership of their health. There is thus potential for health related policy implementation among the workers in future. The majority of the migrant workers also did not indicate a problem with access to healthcare and would visit a private company clinic when they are ill.""},{""type"":""Document"",""metadata"":{""page"":45,""source"":""docs/Ethics on Migrant workers.pdf""},""page_content"":""and a found-ing member of the Leadership Group for Responsible Recruitment, a cross-sectoral approach.Additionally, once migrant workers are found in a supply chain, companies are advised to contact the labor attachés of embassies and consulates of these respective countries to address workers’ grievances in the host country. This governmental resource may pro-vide additional information on how to mitigate risks of forced labor in the host country.""},{""type"":""Document"",""metadata"":{""page"":27,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""page_content"":""night , the ‘uncle’ asked her if she wanted to be a kept woman;  she scold ed him for being insane. And \nshe felt embarrassed and did not  mention it  anymore. This is from our dormitory. ” \n \nBeside the above cases of  “girlfriend ” and “uncle” , there are also ‘floating s ex-workers ’ who are \nunlicensed. For example, many workers told that there is an open and secluded  field near their \ndormitory at Dreamland (pseudonym) where their fellow workers meet the Thai girls (sex- workers). \nHere a sort of makesh  “Thai field ”, since ma inly the Thai sex -workers  are available here.  Beside \nthese, as told by the Tamil workers, floating Tamil sex -workers are also prevalent in Little India, \nparticularly around the Tekka Mall who are usually met by the Tamils and other South Asians.  \n The above  instances raise the concern of vulnerability to HIV and other STDs, because  safe sex \npractices are not possibility maintained  in the  case of indirect or floating sex -workers.  Proper""},{""type"":""Document"",""metadata"":{""page"":19,""source"":""docs/Ethics on Migrant workers.pdf""},""page_content"":""“Bad apples [who violate migrant worker’s rights] have a bad reputation in the long term. Growers that use H2A are businessmen and are diligent on paper; they rely on these workers for more than just one commodity. The Department of Labor (DOL) will visit you, at least once a year, and they are very interested in the topic  of ethical recruitment.” – Manager of Compliance,  Agricultural Products Co. X18  http:/ /www.pewresearch.org/fact-tank/2016/05/18/5-facts-about-the-u-s-rank-in-worldwide-migration/ 19  http:/ /www.reuters.com/investigates/special-report/workers-brokers/""},{""type"":""Document"",""metadata"":{""page"":2,""source"":""docs/Code of Conduct Policy - HealthServe.pdf""},""page_content"":""harassment during the course of their duties. This may include but not limited to avoiding situations\nwhich will increase the risk of harassment, being mindful of the potential risk and be alert when\nleaving the ofce premises at night, (for females) not meeting client alone in both ofce and public\nspaces. Due to the location of the Geylang ofce, there may be risk of harassment by visitors or\ndrunk patrons from the neighbourhood, especially during the night. \nAny intern or volunteer who witnessed or was subjected to harassment is encouraged to put a stop\nto the harassment as soon as possible and report the incident to their supervisor/manager, Head of\nDepartment or CEO (collectively known as “manager”). Once an incident is raised, the manager\nmust talk with the parties concerned and ensure that appropriate action is taken to manage the\nissue at the onset. The manager should also advise the affected person to make a police report if""},{""type"":""Document"",""metadata"":{""page"":14,""source"":""docs/HealthServe-ARFY2021.pdf""},""page_content"":""the migrant brothers and interacting with them.\nAt the end of the day, you will feel physically tired, especially if you’re doing roles \nsuch as running. … But I think in the end, it’s still worth it.Interning at HealthServe was the perfect opportunity \nfor me to learn more about how a clinic is run and \nto combine both the migrant worker community \nknowledge that I have with clinical experience.\nDr Hamid Razak\nVolunteer Doctor“\n”\nI do believe that doing what you can with what you have, where you are, is the best \nthing that you can do. You don’t have to travel far and wide to do good. We just \nneed to do certain things from where we are. We can think big, but we can start \nsmall, and you know if you have passion, it will eventually pave the way for you.\n… HealthServe is (an) organisation I volunteer with to serve the migrant worker \npopulation in Singapore. It really started out very fortuitously because I was asked to""},{""type"":""Document"",""metadata"":{""page"":7,""source"":""docs/iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf""},""page_content"":""ments like passports, permits and visas that limit workers’ freedom of movement are also used by employers and recruiters as a means to trap and exploit migrant workers. \nCompanies in host countries choose to hire migrant workers for a variety of reasons \nincluding local labor shortages or because migrant workers:  \n• are willing to accept lower wages than local workers; \n• are willing to do work that the local workforce will not; \n• have a specialized skill that local workers do not;\n• are willing to relocate and work in remote areas like industrial parks; \n• typically, are either single or travel on single-status work permits; \n• are not protected by local labor laws including laws related to freedom of association,  \nsocial security payments or unemployment insurance\n5. ILO Indicators of Forced Labor:\n• Abuse of vulnerability• Deception• Restriction of movement• Isolation• Physical and sexual violence• Intimidation and threats• Retention of identity""}]",MMR,3,TRUE,FALSE,
+,Wei En,Situational awareness,,"A migrant worker approach me and told me that he felt he has overworked, what should i do ?","Fatigue due to excessive work (longer working hours and overtime as well as working during the
+holidays) causes health hazards and contributes to low productivity as well. Robotic work
+environment leads to health degradation and consequently productivity loss. For the sake of
+economic gain and repayment of high debts, workers are prepared to adopt monotonous work life
+that is often “unfulfilling and without real satisfaction and joy”
+. Most of the workers are keen to work on
+Sundays to earn overtime, which is double of the weekday wages. One has to put this in the context
+that many workers have paid at least $8,000 as agency fee and earn only S$300-500 per month.
+When the availability of overtime is reduced, workers experience financial hardship. As such, one of
+the respondents commented that ""now it is difficult to recuperate the debt after meeting our needs in
+Singapore”","If a migrant worker approaches you and expresses feeling overworked, it is important to handle the situation with empathy and take appropriate steps to address their concerns. Here are some steps you can take:\n\n1. Listen actively: Give the worker your full attention and listen to their concerns without interrupting. Show empathy and understanding towards their situation.\n\n2. Validate their feelings: Acknowledge their feelings of being overworked and assure them that their concerns are being taken seriously.\n\n3. Assess the situation: Ask the worker about their workload and specific tasks that are causing them to feel overworked. Understand the reasons behind their workload and any potential issues that may be contributing to their stress.\n\n4. Provide information: Share information about their rights as a worker, including working hours, rest days, and overtime regulations. Make sure they are aware of their entitlements and any channels they can use to address their concerns.\n\n5. Offer support: Provide guidance on how they can raise their concerns with their employer or supervisor. Encourage them to communicate their workload issues and seek a resolution within the company.\n\n6. Document the conversation: Keep a record of the worker's concerns and any actions taken to address them. This will help in case further intervention or follow-up is needed.\n\n7. Follow up: Check in with the worker after some time to see if their workload has improved or if they have any further concerns. Offer ongoing support and assistance as needed.\n\nRemember, if the worker's concerns persist or if you are unsure about how to handle the situation, it is important to seek guidance from your manager or supervisor.""","[{""metadata"":{""page"":22,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""type"":""Document""},{""metadata"":{""page"":1,""source"":""docs/others.pdf""},""type"":""Document""},{""metadata"":{""page"":1,""source"":""docs/others.pdf""},""type"":""Document""},{""metadata"":{""page"":43,""source"":""docs/Ethics on Migrant workers.pdf""},""type"":""Document""},{""metadata"":{""page"":6,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""type"":""Document""},{""metadata"":{""page"":42,""source"":""docs/Ethics on Migrant workers.pdf""},""type"":""Document""},{""metadata"":{""page"":24,""source"":""docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf""},""type"":""Document""},{""metadata"":{""page"":34,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""type"":""Document""},{""metadata"":{""page"":22,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""type"":""Document""},{""metadata"":{""page"":13,""source"":""docs/HealthServe-ARFY2021.pdf""},""type"":""Document""}]","[{""type"":""Document"",""metadata"":{""page"":22,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""page_content"":""• Workers being poached or complicating the transfers process through negotiations.\n• Workers “threatening” to go to the authorities even when employers feel they are in the right.\n• Workers going directly to authorities and for medical check-ups without the employer’s knowledge.\nHow might we...\n• Take the time to understand each other as persons more and \nto grow in empathy?\n• Build on existing efforts to further ensure the protection of \nworkers who may face wage, benefits, and rights exploitation?Some migrant workers “can \nthreaten to go [to] MOM for the slightest issue that they face even when the employer is right.”\n- Trade association input""},{""type"":""Document"",""metadata"":{""page"":1,""source"":""docs/others.pdf""},""page_content"":""Expressing Empathy:  \""It must be tough being away from your home and adapDng to a new environment. I'm here to listen and help in any way I can.\"" Sharing InformaDon:  \""Are you aware of the resources available to migrant workers in this area? There are organizaDons that can provide assistance with various needs, from housing to legal support.\"" Oﬀering Assistance:  \""If you have any quesDons or concerns, feel free to ask. I can guide you on how to access support services, ﬁnd local communiDes, or navigate the challenges you may face.\"" Building Trust:  \""It's essenDal to build a sense of trust and community. We're here to support each other, and your well-being maTers to us.\"" Encouragement and Reassurance:  \""Remember, you're not alone in this journey. Many others have gone through similar experiences, and we're here to assist you every step of the way.\"" Open-ended QuesDons:  \""Is there anything speciﬁc you'd like to discuss or any parDcular challenges you're facing at the moment?\"" By starDng""},{""type"":""Document"",""metadata"":{""page"":1,""source"":""docs/others.pdf""},""page_content"":""5. \""Welcome! It's important to us that you feel supported. How can we help you seTle into the community?\""  6. \""Hello, I'm [Your Name]. I'd love to hear about your journey as a migrant worker. What has been the most rewarding part so far?\""  7. \""Good to meet you! How are you ﬁnding the transiDon to a new place? Is there anything you'd like to discuss?\""""},{""type"":""Document"",""metadata"":{""page"":43,""source"":""docs/Ethics on Migrant workers.pdf""},""page_content"":""42  I  Best Practice Guidance on Ethical Recruitment of Migrant WorkersWorker interviews in progress.""},{""type"":""Document"",""metadata"":{""page"":6,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""page_content"":""arresting employment malpractices.  The following measures are recommended to improve the \nwellbeing, motivation  and productivity.  \n \nMigrant -friendly measures and services:""},{""type"":""Document"",""metadata"":{""page"":42,""source"":""docs/Ethics on Migrant workers.pdf""},""page_content"":""Employers may do this for safe keeping in the event of fire or other risks. If this service is being offered to employees, this should be stipulated in their contracts and workers’ documents must be accessible on demand in a timely manner. Migrant Worker Infrastructure: Our 3-pillar approach outlines a basic set of requirements to combat forced labor and human trafficking. However, companies that hire migrant workers directly or indirectly need to reach beyond the basic requirements to ensure that their operations are free from human rights violations by implementing: • independent grievance systems;* • guaranteed repatriation of workers stranded in a foreign land;* • basic housing standards; and,* • freedom of association rights. (*Is required by the Executive Order/FAR)""},{""type"":""Document"",""metadata"":{""page"":24,""source"":""docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf""},""page_content"":""be educated on their rights, as well as channels to approach should they face such difficulties at work. No migrant worker should be wrongfully made to work if he/she suffers from medical problems that could pose a threat to their health and livelihood.   With regard to payment, majority of the respondents believe that their company will play a role in the management of their healthcare costs and at least partake in the compensation of medical bills.(figure 2) However, for the minority, their belief is that that they will have to foot majority of the bill. This may be detrimental to their health-seeking predisposition. Once again, efforts to educate migrant workers of their rights and their company’s obligation to be responsible for their healthcare should be stepped up.  2) Actual Experience and Potential Barriers to Healthcare 87.1% (n=236) of our respondents who had fallen sick in Singapore before chose to see a doctor when they suffered an illness/injury (figure 3).  Skin""},{""type"":""Document"",""metadata"":{""page"":34,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""page_content"":""the employer in receiving country, it is almost impossible to ensure accountability and an effe ctive \nchannel to handle grievances from the workers’ perspective. In times of economic downturn, \nworkers have their contract s terminate d pre-maturely or have their monthly income  reduced \nbecause of shorter work weeks. This translate s into longer repayment period for the workers .  \n \n6.3. Recommendations  \nThe following recommendations are put forward to ameliorate  the health and other problems as \nwell as vulnerability of the migrant workers.  \n \n6.3.1. Education/Workshop s and Health Service focusing on Health Prom otion  \nThe following migrant -friendly measures and services are recommended:  \n1) To provide adequate and culturally sensitive workshop s for migrant workers on healthy \nlifestyles.""},{""type"":""Document"",""metadata"":{""page"":22,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""page_content"":""among stakeholders. Recognising this, we do not claim the following to be the norm, but as occasionally occuring.\nComing to Singapore, migrant workers are often at a \ndisadvantage, if they have debt or face information challenges (see next page). Fearing losing their work permit or being repatriated, some will endure unfair treatment by others to continue working here.\nAs a result, we continue to hear some stories of workers \nsuffering from injustices like being cheated by agents (possibly in home countries), the non-payment of salaries, deductions in pay, or overtime pay disguised as “allowances”.\nOn the other hand, some employers may feel a loss of control \nand increased business uncertainty. From our engagements with employers and trade associations, reasons for this include:\n• Workers being poached or complicating the transfers process through negotiations.\n• Workers “threatening” to go to the authorities even when employers feel they are in the right.""},{""type"":""Document"",""metadata"":{""page"":13,""source"":""docs/HealthServe-ARFY2021.pdf""},""page_content"":""Hear From Our Migrant Friend Hear From Our Volunteer\nVolunteering has always been a part of me. It’s something that I’ve been doing \nsince I was young.\nDuring the whole pandemic, the migrant workers were among the hardest-hit \nmembers (of society). I said, ‘Okay, why not?’ I’ll do what I can, make use of my skills \n(as a medical student), and try to give back.\nWhen talking to migrant brothers, I have to break down medical terminology into \nreally simplified phrases. When I asked them, ‘Brother, have you lost weight?’, they \nwould stare at me blankly. I thought, okay, I’ll change it to ‘Brother, has your shirt \ngotten loose?’ I really have to think of different ways to get the message across.\nDrawings really help. I usually draw to explain to them what’s going on. For \nexample, for sinus problems, I’d draw a nose, show them what a sinus looks like, \nand then they try to describe where the pain is. I would write a pain scale in Bengali""}]",MMR,3,TRUE,FALSE,
+,Wei En,Personal Data Protection Act (PDPA),,"I accidently sent a list of patient names into the wrong whatsapp group, and i received an compliants on PDPA, what should i do","start with a mediation of handling inital handling of complains, assessing the complaints, investigating the compliants, responding to compliants","Based on the provided information, here are the steps you should take if you accidentally sent a list of patient names into the wrong WhatsApp group and received a complaint regarding PDPA:\n\n1. Assess the situation: Understand the nature and severity of the incident, including the potential impact on the individuals whose data was shared.\n\n2. Investigate the incident: Determine how and why the incident occurred, who was involved, and gather all relevant information.\n\n3. Communicate with the complainant: Engage with the individual who lodged the complaint to understand their concerns and how they would like the issue to be resolved.\n\n4. Provide interim updates: Keep the complainant informed about the progress of the investigation and any actions being taken to address the issue.\n\n5. Report to management: Prepare an investigation report detailing the findings and recommendations for remedial actions to resolve the complaint. Share this report with the appropriate level of management.\n\n6. Consider systemic issues: Analyze the incident to identify any systemic issues that may have contributed to the incident. Recommend specific actions such as fine-tuning data protection policies, processes, and staff training to prevent similar incidents in the future.\n\n7. Notify relevant authorities if necessary: If the incident involves a breach of personal data that may require reporting to the Personal Data Protection Commission (PDPC) or other relevant authorities, ensure that the necessary notifications are made.\n\nPlease note that the provided steps are general guidelines and may need to be adapted based on the specific policies and procedures of HealthServe. It is always recommended to consult your manager or supervisor for further guidance in handling such incidents."",","[{""metadata"":{""page"":5,""source"":""docs/Fundamentals of the Personal Data Protection Act Dispute Resolution.pdf""},""type"":""Document""},{""metadata"":{""page"":9,""source"":""docs/Fundamentals of the Personal Data Protection Act Dispute Resolution.pdf""},""type"":""Document""},{""metadata"":{""page"":8,""source"":""docs/Fundamentals of the Personal Data Protection Act Dispute Resolution.pdf""},""type"":""Document""},{""metadata"":{""page"":0,""source"":""docs/Data Protection Obligations under the PDPA.pdf""},""type"":""Document""},{""metadata"":{""page"":0,""source"":""docs/Fundamentals of the Personal Data Protection Act Dispute Resolution.pdf""},""type"":""Document""},{""metadata"":{""page"":0,""source"":""docs/Data Protection Obligations under the PDPA.pdf""},""type"":""Document""},{""metadata"":{""page"":0,""source"":""docs/Personal Data Protection Policy - HealthServe.pdf""},""type"":""Document""},{""metadata"":{""page"":7,""source"":""docs/Personal Data Protection Policy - HealthServe.pdf""},""type"":""Document""},{""metadata"":{""page"":5,""source"":""docs/Personal Data Protection Policy - HealthServe.pdf""},""type"":""Document""},{""metadata"":{""page"":8,""source"":""docs/Fundamentals of the Personal Data Protection Act Dispute Resolution.pdf""},""type"":""Document""}]","[{""type"":""Document"",""metadata"":{""page"":5,""source"":""docs/Fundamentals of the Personal Data Protection Act Dispute Resolution.pdf""},""page_content"":""NotesWHAT TO CONSIDER WHEN DEVELOPING PROCESS FOR HANDLING COMPLAINTS RELATING TO DATA PROTECTION""},{""type"":""Document"",""metadata"":{""page"":9,""source"":""docs/Fundamentals of the Personal Data Protection Act Dispute Resolution.pdf""},""page_content"":""EXAMPLE OF COMPLAINT HANDLING PROCESS RELATING TO DATA PROTECTION\n© Copyright 2016 PERSONAL DATA PROTECTION COMMISSION10Stages of complaint processSteps that my organisation could takeTurnaround timePerson-in-charge(5)Taking corrective actions•Analyse current and past complaints to determine if there are systemic issues that might cause such complaints to be lodged in the first place. •Once these systemic issues are identified, recommend specific actions such as fine-tuning of specific data protection policies and processes, staff training, etc. to prevent future recurrences.X weeks after closure of complaint DPO""},{""type"":""Document"",""metadata"":{""page"":8,""source"":""docs/Fundamentals of the Personal Data Protection Act Dispute Resolution.pdf""},""page_content"":""EXAMPLE OF COMPLAINT HANDLING PROCESS RELATING TO DATA PROTECTION""},{""type"":""Document"",""metadata"":{""page"":0,""source"":""docs/Data Protection Obligations under the PDPA.pdf""},""page_content"":""allow them to withdraw \ntheir consent with \nreasonable notice.Consent ProtectionMake reasonable security \narrangements to protect \nthe personal data in your \npossession to prevent \nunauthorised access, \ncollection, use, disclosure \nor similar risks.Ensure that the personal \ndata collected is accurate \nand complete, especially if it \nis likely to be used to make a \ndecision that aﬀects the \nindividual or to be disclosed \nto another organisation. AccuracyUpon request, provide \nindividuals with access to \ntheir personal data and \ninformation on how it was \nused or disclosed within a \nyear, and correct any error \nor omission where required.Access and \nCorrectionNotify individuals of the \npurposes for collecting, \nusing and disclosing their \npersonal data. \nNotiﬁcation\nTransfer personal data to \noverseas according to the \nrequirements prescribed under \nthe regulations, to ensure that \nthe standard of protection is \ncomparable to the protection \nunder the PDPA.Transfer""},{""type"":""Document"",""metadata"":{""page"":0,""source"":""docs/Fundamentals of the Personal Data Protection Act Dispute Resolution.pdf""},""page_content"":""FUNDAMENTALSOFTHEPERSONALDATAPROTECTIONACT\n© Copyright 2016 PERSONAL DATA PROTECTION COMMISSION\nDEVELOP A PROCESS FOR DISPUTE RESOLUTIONThis document is an extract taken from the course “Fundamentals of the Personal Data Protection Act” to equip Data Protection Officers with basic knowledge and skills in complying with the PDPA. For more information on the course, please refer to this link""},{""type"":""Document"",""metadata"":{""page"":0,""source"":""docs/Data Protection Obligations under the PDPA.pdf""},""page_content"":""Data Protection Obligations \nunder the Personal Data Protection Act (PDPA)\nOrganisations are responsible for personal data in their possession or under their control, and are required to comply \nwith these obligations when undertaking activities relating to the collection, use or disclosure of personal data.\n*This will take eﬀect when the Regulations are issued.\nInformation correct as of May 2021.Collection of \nPersonal DataCare of \nPersonal DataIndividual’s Autonomy \nover Personal Data\nIf there is a data breach and \nlikely results in signiﬁcant \nharm to individuals, and/or \nare of signiﬁcant scale, \nnotify the PDPC and \naﬀected individuals as soon \nas practicable. Data Breach \nNotiﬁcationCollect, use or disclose \npersonal data for purposes \nwhich individuals have \ngiven consent to. Also \nallow them to withdraw \ntheir consent with \nreasonable notice.Consent ProtectionMake reasonable security \narrangements to protect \nthe personal data in your \npossession to prevent""},{""type"":""Document"",""metadata"":{""page"":0,""source"":""docs/Personal Data Protection Policy - HealthServe.pdf""},""page_content"":""representatives in acco rdan ce with the Singapore Personal Data Protection Act (“PDPA”) and the\nAdvisory Guidelines for the Social Service Sector by the Personal Data Protection Commission.\nThis Notice applies to personal data in our possession or under our control, including personal data\nin the possession of organisations which we have engaged to collect, use, disclose or process\npersonal data for our purposes.\nCollection, use, disclosure or otherwise processing of personal data of our service users on behalf\nof government ministries or statutory boards will be in accordan ce with guidelines set out in the\ngovernment’s data management policy. HealthServe will comply with the relevant requirements\nunder the government’s data management policy.\nPlease read this Notice carefully to understand our Privacy Policy. By providing your personal data\nto us, you are consenting to HealthServe’s Privacy Policy and the collection, usage, disclosure,""},{""type"":""Document"",""metadata"":{""page"":7,""source"":""docs/Personal Data Protection Policy - HealthServe.pdf""},""page_content"":""10/8/23, 10:28 AM Personal Data Protection Policy - HealthServe\nhttps://www.healthserve.org.sg/pdpa-policy/ 8/9OUR SERVICES\nOUR SUPPO RTERS\nABOUT US\n© Copyright 2022. All rights reserved. Privacy Policy (/pdpa-policy/)\nWhistleblowing Policy (/whistleblowing-policy-procedure/) Featured photographs courtesy of Grace Baey(h\ntt\np\ns:\n//\nw\nw\nw.\nfa\nc\ne\nb\no\no\nk.\nc\no\nm\n/h\ne\nal\nth\ns\ner\nv(h\ntt\np\ns:\n//i\nn\nst\na\ngr\na\nm\n.c\no\nm\n/h\ne\nal\nth\ns\ner\nv\ne\ns(h\ntt\np:\n//l\nin\nk\ne\ndi\nn.\nc\no\nm\n/c\no\nm\np\na\nn\ny/\nh\ne\nal\nth\ns\ner(h\ntt\np\ns:\n//\nw\nw\nw.\ny\no\nut\nu\nb\ne.\nc\no\nm\n/c\nh\na\nn\nn\nel\n/\nU\nC\n0\nF\ne\nq\nV\nz\nd\nE\ne(h\ntt\np\ns:\n//\nw\nw\nw\n.ti\nkt\no\nk.\nc\no\nm\n/\n@\nh\ne\nal\nth\ns\ner\nvPartner Us\nCaring Cards\nMedical & Dental Services\nMental Health & Counselling Services\nCasework & Social Services\nOur Donors\nOur Belief\nOur Story\nOur Impact\nAnnual Reports\nOur TeamPress Room\nIn the News\nStories\nResearch & Publications\nContact Us""},{""type"":""Document"",""metadata"":{""page"":5,""source"":""docs/Personal Data Protection Policy - HealthServe.pdf""},""page_content"":""10/8/23, 10:28 AM Personal Data Protection Policy - HealthServe\nhttps://www.healthserve.org.sg/pdpa-policy/ 6/9is current, complete and accu rate at all times.\nACCESS TO AND CORRECTION OF PERSONAL DATA\n13. If you wish to make a request (a) for access to a copy of the personal data which we hold about\nyou or information about the ways in which we use or disclose your personal data, or (b) to\ncorrect or update any of your personal data which we hold about you, you may submit your\nrequest to our Data Protection Ofcer at the contact details provided below. Please note that\nan administrative fee may be charged for processing your request, depending on the nature and\ncomplexity of the request. We will inform you of any such fee before processing your\nrequest. You may acce ss the forms here: Acce ss Request Form\n(https://www.healthserve.org.sg/wp-content/uploads/2021/12/Annex-C-HEALTHSERVES-\nACCESS-REQUEST-FORM.pdf), Correction Request Form (https://www.healthserve.org.sg/wp-""},{""type"":""Document"",""metadata"":{""page"":8,""source"":""docs/Fundamentals of the Personal Data Protection Act Dispute Resolution.pdf""},""page_content"":""© Copyright 2016 PERSONAL DATA PROTECTION COMMISSION9Stages of complaint processSteps that my organisation could takeTurnaround timePerson-in-charge•Assess the timeframe needed to achieve closure for the complaint and inform complainant accordinglyX days after investigation officer is assigned (3) Investigating the complaints•Determine what caused the non-compliance to take place, who were involved and how and why it happened•Provide interim updates to the complainant and find out from the complainant how he/she might want his/her complaint to be resolved•Submit investigation report to appropriate level of management, including (1) findings made; (2) recommendations on the remedial actions to be taken to achieve resolution of the complaint•If need be, report to/inform the relevant authorities such as police and PDPCAverage turnaround time is based on estimates by investigation officer Average turnaround time is based on estimates by investigation officer Investigation officer""}]",MMR,3,TRUE,TRUE,
+,Wei En,Situational awareness,,"A migrant worker approach me and told me that he suspect that he might contact with STD, what should i advise ?","anonymous HIV counseling and
+testing services and to set up “integrated” community drop-in centers that provide
+relationship and value education so that foreign workers can build and maintain healthy
+relationship with one another and with opposite sex","If you have been touched by a migrant worker and felt uncomfortable, it is important to prioritize your safety and well-being. Here are some steps you can take:\n\n1. Remove yourself from the situation: If you are still in the presence of the worker and feel unsafe, try to distance yourself from them and find a safe space.\n\n2. Trust your instincts: If you felt uncomfortable, it is important to acknowledge your feelings and take them seriously. Your feelings are valid.\n\n3. Report the incident: Inform your supervisor, manager, or someone in a position of authority about what happened. They can guide you on the appropriate steps to take and provide support.\n\n4. Seek medical attention if necessary: If you have any physical injuries or concerns, it is advisable to seek medical attention. They can assess your condition and provide any necessary treatment.\n\n5. Document the incident: If possible, write down the details of the incident, including the date, time, location, and any relevant information about the worker involved. This can be helpful for any future investigations or actions.\n\n6. Follow company protocols: Your organization may have specific protocols in place for handling such incidents. Follow these protocols and cooperate with any investigations or actions that may be taken.\n\nRemember, it is important to prioritize your safety and well-being. If you have any doubts or concerns, do not hesitate to seek guidance from your supervisor, manager, or Human Resources department."",
+  ""source_documents"": ","[{""metadata"":{""page"":22,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""type"":""Document""},{""metadata"":{""page"":21,""source"":""docs/Ethics on Migrant workers.pdf""},""type"":""Document""},{""metadata"":{""page"":43,""source"":""docs/Ethics on Migrant workers.pdf""},""type"":""Document""},{""metadata"":{""page"":27,""source"":""docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf""},""type"":""Document""},{""metadata"":{""page"":45,""source"":""docs/Ethics on Migrant workers.pdf""},""type"":""Document""},{""metadata"":{""page"":27,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""type"":""Document""},{""metadata"":{""page"":19,""source"":""docs/Ethics on Migrant workers.pdf""},""type"":""Document""},{""metadata"":{""page"":2,""source"":""docs/Code of Conduct Policy - HealthServe.pdf""},""type"":""Document""},{""metadata"":{""page"":14,""source"":""docs/HealthServe-ARFY2021.pdf""},""type"":""Document""},{""metadata"":{""page"":7,""source"":""docs/iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf""},""type"":""Document""}]","[{""type"":""Document"",""metadata"":{""page"":22,""source"":""docs/NVPC-MW-Colabs-Report.pdf""},""page_content"":""• Workers being poached or complicating the transfers process through negotiations.\n• Workers “threatening” to go to the authorities even when employers feel they are in the right.\n• Workers going directly to authorities and for medical check-ups without the employer’s knowledge.\nHow might we...\n• Take the time to understand each other as persons more and \nto grow in empathy?\n• Build on existing efforts to further ensure the protection of \nworkers who may face wage, benefits, and rights exploitation?Some migrant workers “can \nthreaten to go [to] MOM for the slightest issue that they face even when the employer is right.”\n- Trade association input""},{""type"":""Document"",""metadata"":{""page"":21,""source"":""docs/Ethics on Migrant workers.pdf""},""page_content"":""20  I  Best Practice Guidance on Ethical Recruitment of Migrant Workersstakeholder group invites government representatives from both sides of the border into the discussion. Its meetings have been attended by the Mexican embassy staff. With the rollout of Company X’s new policy, growers will have to become more account-able for their operations, especially when it comes to contracting workers to meet new expectations in compliance with the No Fees policy. The penalties for violations of the Migrant and Seasonal Agricultural Worker Protection Act (MSPA) are both civil and criminal. Among the 30 possible violations are issues related to payment of wages, poor housing conditions, lack of health and safety safeguards, use of an unregistered crew lead-er, overcrowding, failure to provide safe transport, failure to ensure drivers are licensed, and failure to register employees. The company contracts produce growers directly and since 2015 started using third-party bilingual assessors to""},{""type"":""Document"",""metadata"":{""page"":43,""source"":""docs/Ethics on Migrant workers.pdf""},""page_content"":""42  I  Best Practice Guidance on Ethical Recruitment of Migrant WorkersWorker interviews in progress.""},{""type"":""Document"",""metadata"":{""page"":27,""source"":""docs/HealthcareSeekingBehaviour.NUS_.Apr2013.pdf""},""page_content"":""This stems from the recognition that they must take ownership of their health. There is thus potential for health related policy implementation among the workers in future. The majority of the migrant workers also did not indicate a problem with access to healthcare and would visit a private company clinic when they are ill.""},{""type"":""Document"",""metadata"":{""page"":45,""source"":""docs/Ethics on Migrant workers.pdf""},""page_content"":""and a found-ing member of the Leadership Group for Responsible Recruitment, a cross-sectoral approach.Additionally, once migrant workers are found in a supply chain, companies are advised to contact the labor attachés of embassies and consulates of these respective countries to address workers’ grievances in the host country. This governmental resource may pro-vide additional information on how to mitigate risks of forced labor in the host country.""},{""type"":""Document"",""metadata"":{""page"":27,""source"":""docs/Report_MigrantStudy_HealthServe_FINAL.pdf""},""page_content"":""night , the ‘uncle’ asked her if she wanted to be a kept woman;  she scold ed him for being insane. And \nshe felt embarrassed and did not  mention it  anymore. This is from our dormitory. ” \n \nBeside the above cases of  “girlfriend ” and “uncle” , there are also ‘floating s ex-workers ’ who are \nunlicensed. For example, many workers told that there is an open and secluded  field near their \ndormitory at Dreamland (pseudonym) where their fellow workers meet the Thai girls (sex- workers). \nHere a sort of makesh  “Thai field ”, since ma inly the Thai sex -workers  are available here.  Beside \nthese, as told by the Tamil workers, floating Tamil sex -workers are also prevalent in Little India, \nparticularly around the Tekka Mall who are usually met by the Tamils and other South Asians.  \n The above  instances raise the concern of vulnerability to HIV and other STDs, because  safe sex \npractices are not possibility maintained  in the  case of indirect or floating sex -workers.  Proper""},{""type"":""Document"",""metadata"":{""page"":19,""source"":""docs/Ethics on Migrant workers.pdf""},""page_content"":""“Bad apples [who violate migrant worker’s rights] have a bad reputation in the long term. Growers that use H2A are businessmen and are diligent on paper; they rely on these workers for more than just one commodity. The Department of Labor (DOL) will visit you, at least once a year, and they are very interested in the topic  of ethical recruitment.” – Manager of Compliance,  Agricultural Products Co. X18  http:/ /www.pewresearch.org/fact-tank/2016/05/18/5-facts-about-the-u-s-rank-in-worldwide-migration/ 19  http:/ /www.reuters.com/investigates/special-report/workers-brokers/""},{""type"":""Document"",""metadata"":{""page"":2,""source"":""docs/Code of Conduct Policy - HealthServe.pdf""},""page_content"":""harassment during the course of their duties. This may include but not limited to avoiding situations\nwhich will increase the risk of harassment, being mindful of the potential risk and be alert when\nleaving the ofce premises at night, (for females) not meeting client alone in both ofce and public\nspaces. Due to the location of the Geylang ofce, there may be risk of harassment by visitors or\ndrunk patrons from the neighbourhood, especially during the night. \nAny intern or volunteer who witnessed or was subjected to harassment is encouraged to put a stop\nto the harassment as soon as possible and report the incident to their supervisor/manager, Head of\nDepartment or CEO (collectively known as “manager”). Once an incident is raised, the manager\nmust talk with the parties concerned and ensure that appropriate action is taken to manage the\nissue at the onset. The manager should also advise the affected person to make a police report if""},{""type"":""Document"",""metadata"":{""page"":14,""source"":""docs/HealthServe-ARFY2021.pdf""},""page_content"":""the migrant brothers and interacting with them.\nAt the end of the day, you will feel physically tired, especially if you’re doing roles \nsuch as running. … But I think in the end, it’s still worth it.Interning at HealthServe was the perfect opportunity \nfor me to learn more about how a clinic is run and \nto combine both the migrant worker community \nknowledge that I have with clinical experience.\nDr Hamid Razak\nVolunteer Doctor“\n”\nI do believe that doing what you can with what you have, where you are, is the best \nthing that you can do. You don’t have to travel far and wide to do good. We just \nneed to do certain things from where we are. We can think big, but we can start \nsmall, and you know if you have passion, it will eventually pave the way for you.\n… HealthServe is (an) organisation I volunteer with to serve the migrant worker \npopulation in Singapore. It really started out very fortuitously because I was asked to""},{""type"":""Document"",""metadata"":{""page"":7,""source"":""docs/iccrsbestpracticeguidanceethicalrecruitment05.09.17_final.pdf""},""page_content"":""ments like passports, permits and visas that limit workers’ freedom of movement are also used by employers and recruiters as a means to trap and exploit migrant workers. \nCompanies in host countries choose to hire migrant workers for a variety of reasons \nincluding local labor shortages or because migrant workers:  \n• are willing to accept lower wages than local workers; \n• are willing to do work that the local workforce will not; \n• have a specialized skill that local workers do not;\n• are willing to relocate and work in remote areas like industrial parks; \n• typically, are either single or travel on single-status work permits; \n• are not protected by local labor laws including laws related to freedom of association,  \nsocial security payments or unemployment insurance\n5. ILO Indicators of Forced Labor:\n• Abuse of vulnerability• Deception• Restriction of movement• Isolation• Physical and sexual violence• Intimidation and threats• Retention of identity""}]",MMR,3,TRUE,TRUE,
