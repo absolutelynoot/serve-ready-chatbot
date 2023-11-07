@@ -10,9 +10,9 @@ Use Cases:
 - ☑️ Chat with your documents using OpenAI's LLM Chatbot
 - ☑️ CD to AWS BeanStalk
 - ☑️ Telegram Bot integration
-- ☐ (In progress) WhatsApp integration using Twillio
-- ☐ (In progress) Talk via voice notes to your documents using OpenAI's Voice to Text AI
-- ☐ (In progress) Carbon Management to cloud usage  
+- ☑️ WhatsApp integration using Twillio
+- ☐ (Future implementation) Talk via voice notes to your documents using OpenAI's Voice to Text AI
+- ☐ (Future implementation) Carbon Management to cloud usage  
 
 ## Files
 
@@ -32,10 +32,15 @@ Use Cases:
 
    * Training script that can be executed using the command `python train.py`.
    * Used for training your specific Language Model with OpenAI's GPT-3.5.
-4. **telegram_bot.py**
+4. **telegram_bot.py (Telegram Bot)**
 
    * Main file to activate the Telegram bot connected to the trained Language Model.
    * Run the Telegram bot using the command `python telegram_bot.py`.
+
+4. **wa_bot.py (Whatsapp Bot)**
+
+   * Main file to activate the Telegram bot connected to the trained Language Model.
+   * Run the Telegram bot using the command `python wa_bot.py`.
 
 ## Getting Started
 
@@ -77,4 +82,6 @@ To setup CD to AWS Elastic Beanstalk please follow the steps below:
 1. Ensure that the environment variables are correctly configured in the `.env` file.
 2. Train the custom Language Model using `train.py` if needed after storing into `./docs` folder.
 3. Run the Telegram bot using `telegram_bot.py` to start interacting with the Language Model through Telegram.
+
+Developed by Faisal Ichsan Samudra as part of SMU AI in Humanity Module taught by Prof Andrew Koh.
 
